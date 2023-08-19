@@ -78,7 +78,19 @@
     text-align: center;
   }
 
-  &__heading {}
+  &__heading {
+    font-size: 50px;
+    line-height: 125%; // 62.5px
+    letter-spacing: 1px;
+  }
 
-  &__text {}
+  &__text {
+    color: $fontColorAdditional;
+    font-family: 'Jost';
+    font-size: 22px;
+    line-height: 150%; // 33px
+    letter-spacing: 0.22px;
+    margin: 0 auto;
+    max-width: 737px;
+  }
 }
