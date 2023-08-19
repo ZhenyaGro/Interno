@@ -4,4 +4,11 @@
       color: $brandColor;
     }
   }
+
+  .index-main {
+    &__link:hover {
+      background-color: white;
+      color: $brandColor;
+    }
+  }
 }
