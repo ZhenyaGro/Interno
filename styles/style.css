@@ -57,11 +57,13 @@ a {
 
 .index-main {
   background-image: url(../images/index-main_background.png);
+  background-repeat: no-repeat;
   height: 758px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 57px;
+  margin-bottom: 96px;
   padding-left: 52px;
 }
 .index-main__heading {
@@ -98,6 +100,9 @@ a {
   transition: all 0.3s;
 }
 
+.projects__header {
+  text-align: center;
+}
 @media (any-hover: hover) {
   .header__link:hover {
     color: #CDA274;

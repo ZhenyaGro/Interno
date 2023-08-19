@@ -27,11 +27,13 @@
 
 .index-main {
   background-image: url(../images/index-main_background.png);
+  background-repeat: no-repeat;
   height: 758px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 57px;
+  margin-bottom: 96px;
   padding-left: 52px;
 
   &__heading {
@@ -68,4 +70,15 @@
     letter-spacing: 0.36px;
     transition: all .3s;
   }
+}
+
+.projects {
+
+  &__header {
+    text-align: center;
+  }
+
+  &__heading {}
+
+  &__text {}
 }
