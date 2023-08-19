@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "DM Serif Display", serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+a {
+  color: #292F36;
+  text-decoration: none;
+}
+
+.container {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.header__homelink {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 40px;
+  line-height: 125%;
+}
+.header__links {
+  display: flex;
+  gap: 48px;
+}
+.header__link {
+  font-family: "Jost";
+  font-size: 20px;
+  line-height: 125%;
+}/*# sourceMappingURL=style.css.map */

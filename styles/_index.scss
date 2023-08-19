@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+
+  &__homelink {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 40px;
+    line-height: 125%;
+  }
+
+  &__links {
+    display: flex;
+    gap: 48px;
+  }
+
+  &__link {
+    font-family: 'Jost';
+    font-size: 20px;
+    line-height: 125%; // 25px
+  }
+}
