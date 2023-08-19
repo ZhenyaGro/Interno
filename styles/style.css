@@ -40,4 +40,11 @@ a {
   font-family: "Jost";
   font-size: 20px;
   line-height: 125%;
+  transition: color 0.1s;
+}
+
+@media (any-hover: hover) {
+  .header__link:hover {
+    color: #CDA274;
+  }
 }/*# sourceMappingURL=style.css.map */

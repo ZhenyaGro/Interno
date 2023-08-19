@@ -1,0 +1,7 @@
+@media (any-hover: hover) {
+  .header {
+    &__link:hover {
+      color: $brandColor;
+    }
+  }
+}
