@@ -27,6 +27,7 @@
 
 .index-main {
   background-image: url(../images/index-main_background.png);
+  border-radius: 50px;
   background-repeat: no-repeat;
   height: 758px;
   display: flex;
@@ -35,6 +36,7 @@
   margin-top: 57px;
   margin-bottom: 96px;
   padding-left: 52px;
+  padding-right: 52px;
 
   &__heading {
     font-size: 65px;
@@ -92,5 +94,40 @@
     letter-spacing: 0.22px;
     margin: 0 auto;
     max-width: 737px;
+    margin-bottom: 93px;
   }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(547px, 1fr));
+    column-gap: 100px;
+    row-gap: 56px;
+  }
+
+  &__block {
+    width: 547px;
+    display: block;
+  }
+
+  &__block:first-child>img {
+    border-radius: 0 80px 0 0;
+  }
+
+  &__block:nth-child(2)>img {
+    border-radius: 80px 0 0 0;
+  }
+
+  &__block:nth-child(3)>img {
+    border-radius: 0 0 80px 0;
+  }
+
+  &__block:last-child>img {
+    border-radius: 0 0 0 80px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+  }
+
 }
