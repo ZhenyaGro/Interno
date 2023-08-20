@@ -183,3 +183,23 @@
     letter-spacing: 0.22px;
   }
 }
+
+.news {
+
+  &__header {
+    margin-bottom: 52px;
+  }
+
+  &__heading {
+    text-align: center;
+    font-size: 50px;
+    line-height: 125%; // 62.5px
+    letter-spacing: 1px;
+  }
+
+  &__text {
+    @extend %textAdditional;
+    text-align: center;
+    letter-spacing: 0.22px;
+  }
+}

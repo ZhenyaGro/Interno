@@ -1,4 +1,4 @@
-.results__text, .projects__category, .projects__text, .index-main__text, .header__link {
+.news__text, .results__text, .projects__category, .projects__text, .index-main__text, .header__link {
   color: #4D5053;
   font-family: "Jost";
   font-size: 22px;
@@ -189,6 +189,20 @@ a {
   letter-spacing: 1.7px;
 }
 .results__text {
+  letter-spacing: 0.22px;
+}
+
+.news__header {
+  margin-bottom: 52px;
+}
+.news__heading {
+  text-align: center;
+  font-size: 50px;
+  line-height: 125%;
+  letter-spacing: 1px;
+}
+.news__text {
+  text-align: center;
   letter-spacing: 0.22px;
 }
 
