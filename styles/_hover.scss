@@ -21,4 +21,14 @@
       fill: $brandColor;
     }
   }
+
+  .news {
+    &__block:hover {
+      background-color: $hoverAddColor;
+    }
+
+    &__block:hover svg circle {
+      fill: white;
+    }
+  }
 }
