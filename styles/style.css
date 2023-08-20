@@ -1,3 +1,10 @@
+.results__text, .projects__category, .projects__text, .index-main__text, .header__link {
+  color: #4D5053;
+  font-family: "Jost";
+  font-size: 22px;
+  line-height: 150%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -49,9 +56,7 @@ a {
   gap: 48px;
 }
 .header__link {
-  font-family: "Jost";
   font-size: 20px;
-  line-height: 125%;
   transition: color 0.1s;
 }
 
@@ -75,10 +80,6 @@ a {
   margin-bottom: 18px;
 }
 .index-main__text {
-  color: #4D5053;
-  font-family: "Jost";
-  font-size: 22px;
-  line-height: 150%;
   letter-spacing: 0.22px;
   margin-bottom: 21px;
   max-width: 434px;
@@ -102,6 +103,9 @@ a {
   transition: all 0.3s;
 }
 
+.projects {
+  margin-bottom: 96px;
+}
 .projects__header {
   text-align: center;
 }
@@ -111,10 +115,6 @@ a {
   letter-spacing: 1px;
 }
 .projects__text {
-  color: #4D5053;
-  font-family: "Jost";
-  font-size: 22px;
-  line-height: 150%;
   letter-spacing: 0.22px;
   margin: 0 auto;
   max-width: 737px;
@@ -160,10 +160,21 @@ a {
   letter-spacing: 0.5px;
 }
 .projects__category {
-  color: #4D5053;
-  font-family: "Jost";
-  font-size: 22px;
-  line-height: 150%;
+  letter-spacing: 0.22px;
+}
+
+.results {
+  padding-top: 151px;
+  padding-bottom: 151px;
+  background-color: #F4F0EC;
+}
+.results__heading {
+  color: #CDA274;
+  font-size: 85px;
+  line-height: 125%;
+  letter-spacing: 1.7px;
+}
+.results__text {
   letter-spacing: 0.22px;
 }
 

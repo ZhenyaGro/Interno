@@ -4,3 +4,10 @@ $brandColor: #CDA274;
 
 $containerWidth: 1200px;
 $containerPadding: calc(50% - $containerWidth / 2);
+
+%textAdditional {
+  color: $fontColorAdditional;
+  font-family: 'Jost';
+  font-size: 22px;
+  line-height: 150%;
+}

@@ -18,9 +18,8 @@
   }
 
   &__link {
-    font-family: 'Jost';
+    @extend %textAdditional;
     font-size: 20px;
-    line-height: 125%; // 25px
     transition: color .1s;
   }
 }
@@ -46,10 +45,7 @@
   }
 
   &__text {
-    color: #4D5053;
-    font-family: 'Jost';
-    font-size: 22px;
-    line-height: 150%; // 33px
+    @extend %textAdditional;
     letter-spacing: 0.22px;
     margin-bottom: 21px;
     max-width: 434px;
@@ -75,6 +71,7 @@
 }
 
 .projects {
+  margin-bottom: 96px;
 
   &__header {
     text-align: center;
@@ -87,10 +84,8 @@
   }
 
   &__text {
-    color: $fontColorAdditional;
-    font-family: 'Jost';
-    font-size: 22px;
-    line-height: 150%; // 33px
+
+    @extend %textAdditional;
     letter-spacing: 0.22px;
     margin: 0 auto;
     max-width: 737px;
@@ -149,11 +144,28 @@
   }
 
   &__category {
-    color: $fontColorAdditional;
-    font-family: 'Jost';
-    font-size: 22px;
-    line-height: 150%; // 33px
+    @extend %textAdditional;
     letter-spacing: 0.22px;
   }
 
+}
+
+.results {
+  padding-top: 151px;
+  padding-bottom: 151px;
+  background-color: #F4F0EC;
+
+  &__block {}
+
+  &__heading {
+    color: #CDA274;
+    font-size: 85px;
+    line-height: 125%; // 106.25px
+    letter-spacing: 1.7px;
+  }
+
+  &__text {
+    @extend %textAdditional;
+    letter-spacing: 0.22px;
+  }
 }
