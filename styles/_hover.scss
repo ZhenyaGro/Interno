@@ -11,4 +11,14 @@
       color: $brandColor;
     }
   }
+
+  .projects {
+    &__block:hover svg path {
+      stroke: white;
+    }
+
+    &__block:hover svg circle {
+      fill: $brandColor;
+    }
+  }
 }

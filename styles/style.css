@@ -143,9 +143,28 @@ a {
 .projects__block:last-child > img {
   border-radius: 0 0 0 80px;
 }
+.projects__block svg path,
+.projects__block svg circle {
+  transition: all 0.2s;
+}
+.projects__img {
+  margin-bottom: 24px;
+}
 .projects__info {
   display: flex;
   justify-content: space-between;
+}
+.projects__project-name {
+  font-size: 25px;
+  line-height: 125%;
+  letter-spacing: 0.5px;
+}
+.projects__category {
+  color: #4D5053;
+  font-family: "Jost";
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 0.22px;
 }
 
 @media (any-hover: hover) {
@@ -155,5 +174,11 @@ a {
   .index-main__link:hover {
     background-color: white;
     color: #CDA274;
+  }
+  .projects__block:hover svg path {
+    stroke: white;
+  }
+  .projects__block:hover svg circle {
+    fill: #CDA274;
   }
 }/*# sourceMappingURL=style.css.map */
