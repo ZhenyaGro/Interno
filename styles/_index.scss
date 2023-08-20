@@ -154,8 +154,22 @@
   padding-top: 151px;
   padding-bottom: 151px;
   background-color: #F4F0EC;
+  display: flex;
+  justify-content: center;
+  gap: 76px;
+  margin-bottom: 96px;
 
-  &__block {}
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid $brandColor;
+    padding-right: 56px;
+  }
+
+  &__block:last-child {
+    border: none;
+  }
 
   &__heading {
     color: #CDA274;

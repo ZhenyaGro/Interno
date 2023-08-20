@@ -167,6 +167,20 @@ a {
   padding-top: 151px;
   padding-bottom: 151px;
   background-color: #F4F0EC;
+  display: flex;
+  justify-content: center;
+  gap: 76px;
+  margin-bottom: 96px;
+}
+.results__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #CDA274;
+  padding-right: 56px;
+}
+.results__block:last-child {
+  border: none;
 }
 .results__heading {
   color: #CDA274;
