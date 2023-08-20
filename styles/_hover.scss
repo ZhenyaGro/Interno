@@ -31,4 +31,15 @@
       fill: white;
     }
   }
+
+  .footer {
+
+    &__social-link:hover svg path {
+      fill: $brandColor;
+    }
+
+    &__page:hover {
+      color: $brandColor;
+    }
+  }
 }

@@ -1,4 +1,4 @@
-.news__date, .news__sticker, .news__text, .results__text, .projects__category, .projects__text, .index-main__text, .header__link {
+.footer__page, .footer__text, .news__date, .news__sticker, .news__text, .results__text, .projects__category, .projects__text, .index-main__text, .header__link {
   color: #4D5053;
   font-family: "Jost";
   font-size: 22px;
@@ -264,6 +264,59 @@ a {
   text-transform: capitalize;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 134px;
+}
+.footer__homelink {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 40px;
+  line-height: 125%;
+  margin-bottom: 18px;
+}
+.footer__text {
+  letter-spacing: 0.22px;
+  max-width: 393px;
+  margin-bottom: 31px;
+}
+.footer__social {
+  display: flex;
+  gap: 54px;
+}
+.footer__social-link svg path {
+  transition: fill 0.1s;
+}
+.footer__pages {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.footer__page_main {
+  font-size: 25px;
+  line-height: 125%;
+}
+.footer__page {
+  line-height: 300%;
+  letter-spacing: 0.22px;
+  transition: color 0.1s;
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.footer__contact_main {
+  font-size: 25px;
+  line-height: 125%;
+}
+.footer__text_small {
+  letter-spacing: 0.22px;
+  max-width: 258px;
+}
+
 @media (any-hover: hover) {
   .header__link:hover {
     color: #CDA274;
@@ -283,5 +336,11 @@ a {
   }
   .news__block:hover svg circle {
     fill: white;
+  }
+  .footer__social-link:hover svg path {
+    fill: #CDA274;
+  }
+  .footer__page:hover {
+    color: #CDA274;
   }
 }/*# sourceMappingURL=style.css.map */
