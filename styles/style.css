@@ -215,6 +215,7 @@ a {
   gap: 27px;
 }
 .news__block {
+  display: block;
   width: 382px;
   box-sizing: border-box;
   border: 1px solid #E7E7E7;
