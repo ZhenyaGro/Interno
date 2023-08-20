@@ -205,6 +205,10 @@ a {
   text-align: center;
   letter-spacing: 0.22px;
 }
+.news__blocks {
+  display: flex;
+  gap: 27px;
+}
 .news__block {
   width: 382px;
   box-sizing: border-box;

@@ -203,6 +203,11 @@
     letter-spacing: 0.22px;
   }
 
+  &__blocks {
+    display: flex;
+    gap: 27px;
+  }
+
   &__block {
     width: 382px;
     box-sizing: border-box;
