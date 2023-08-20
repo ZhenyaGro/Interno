@@ -185,6 +185,7 @@
 }
 
 .news {
+  margin-bottom: 96px;
 
   &__header {
     margin-bottom: 52px;
@@ -201,6 +202,8 @@
     @extend %textAdditional;
     text-align: center;
     letter-spacing: 0.22px;
+    max-width: 811px;
+    margin: 0 auto;
   }
 
   &__blocks {

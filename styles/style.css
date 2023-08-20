@@ -192,6 +192,9 @@ a {
   letter-spacing: 0.22px;
 }
 
+.news {
+  margin-bottom: 96px;
+}
 .news__header {
   margin-bottom: 52px;
 }
@@ -204,6 +207,8 @@ a {
 .news__text {
   text-align: center;
   letter-spacing: 0.22px;
+  max-width: 811px;
+  margin: 0 auto;
 }
 .news__blocks {
   display: flex;
