@@ -33,13 +33,29 @@
   }
 
   .footer {
-
     &__social-link:hover svg path {
       fill: $brandColor;
     }
 
     &__page:hover {
       color: $brandColor;
+    }
+  }
+
+  // Blog
+  .page-view {
+    &__breadcrumb:hover a {
+      color: $brandColor;
+    }
+  }
+
+  .post {
+    &__block:hover {
+      background-color: #F4F0EC;
+
+      & svg circle {
+        fill: white;
+      }
     }
   }
 }
