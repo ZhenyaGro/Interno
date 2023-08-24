@@ -42,6 +42,7 @@
 
 .post {
   margin-top: 200px;
+  margin-bottom: 150px;
 
   &__heading {
     font-size: 50px;
@@ -91,4 +92,12 @@
     justify-content: space-between;
     @extend %textAdditional;
   }
+}
+
+.news {
+  &__heading_left {
+    text-align: left;
+  }
+
+  &__blocks {}
 }
