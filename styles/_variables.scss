@@ -12,3 +12,11 @@ $containerPadding: calc(50% - $containerWidth / 2);
   font-size: 22px;
   line-height: 150%;
 }
+
+@mixin page-view_background($path, $min-height) {
+  background-image: url($path);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: $min-height + px;
+}
