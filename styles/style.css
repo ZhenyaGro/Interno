@@ -43,6 +43,7 @@ a {
   justify-content: space-between;
   align-items: center;
   margin-top: 50px;
+  margin-bottom: 45px;
 }
 .header__homelink {
   display: flex;
@@ -319,12 +320,11 @@ a {
 }
 
 .page-view {
-  background-image: url(../images/blog-background.jpg);
+  background-image: url("../images/blog-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 356px;
-  margin-top: 45px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -429,6 +429,14 @@ a {
 }
 .news__page-next svg circle {
   transition: all 2s;
+}
+
+.page-view_blog-details {
+  background-image: url("../images/blog-details-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 351px;
 }
 
 @media (any-hover: hover) {
