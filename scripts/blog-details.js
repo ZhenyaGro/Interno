@@ -71,13 +71,22 @@ Vue.component('blog-list', {
           tags: ['Kitchen Planning', 'Bedroom2'],
         }
       ],
+      selectedTag: '',
     };
+  },
+
+  computed: {
+    filteredArticles() {
+      if (!this.selectedTag)
+        return this.articles;
+      return this.articles.filter(article => article.tags.includes(this.selectedTag));
+    }
   },
 
   template: `
   <div>
     <ol class="blog__ol">
-      <li v-for="(article, index) in articles" :key="index" class="blog__li">
+      <li v-for="(article, index) in filteredArticles" :key="index" class="blog__li">
         <blog-item :text="article.text" />
       </li>
     </ol>
@@ -88,8 +97,15 @@ Vue.component('blog-list', {
 Vue.component('taglist', {
   data() {
     return {
-      tags: ['Kitchen', 'Bedroom', 'Building', 'Architecture', 'Kitchen Planning', 'Bedroom']
+      tags: ['Kitchen', 'Bedroom', 'Building', 'Architecture', 'Kitchen Planning', 'Bedroom2']
     };
+  },
+
+  methods: {
+    selectTag() {
+      parent.currentTag = 'test';
+      console.log();
+    }
   },
 
   template: `
