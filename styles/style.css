@@ -1,4 +1,4 @@
-.post__additional, .post__text, .page-view__breadcrumb, .footer__page, .footer__text, .news__date, .news__sticker, .news__text, .results__text, .projects__category, .projects__text, .index-main__text, .header__link {
+.blog__text, .blog__info, .post__additional, .post__text, .page-view__breadcrumb, .footer__page, .footer__text, .news__date, .news__sticker, .news__text, .results__text, .projects__category, .projects__text, .index-main__text, .header__link {
   color: #4D5053;
   font-family: "Jost";
   font-size: 22px;
@@ -325,6 +325,7 @@ a {
   background-size: cover;
   background-position: center;
   min-height: 356px;
+  margin-bottom: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -354,7 +355,6 @@ a {
 }
 
 .post {
-  margin-top: 200px;
   margin-bottom: 150px;
 }
 .post__heading {
@@ -437,6 +437,59 @@ a {
   background-size: cover;
   background-position: center;
   min-height: 351px;
+  margin-bottom: 200px;
+}
+
+.blog__heading {
+  font-size: 50px;
+  line-height: 125%;
+  letter-spacing: 1px;
+  margin-bottom: 21px;
+}
+.blog__img {
+  border-radius: 50px;
+  margin-bottom: 46px;
+}
+.blog__info {
+  font-size: 16px;
+  letter-spacing: 0.16px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+.blog__breadcrumbs {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.blog__breadcrumbs li:not(:last-child)::after {
+  display: inline-block;
+  content: "/";
+  padding-right: 8px;
+}
+.blog__text {
+  margin-bottom: 35px;
+}
+.blog__blockquote {
+  border-radius: 50px;
+  background: #F4F0EC;
+  padding: 53px 227px;
+  text-align: center;
+}
+.blog__svg-quote {
+  margin: 0 auto;
+  display: block;
+}
+.blog__quote {
+  color: #CDA274;
+  font-size: 25px;
+  font-style: italic;
+  line-height: 125%;
+  letter-spacing: 0.5px;
+}
+.blog__quote::before, .blog__quote::after {
+  content: "";
 }
 
 @media (any-hover: hover) {
