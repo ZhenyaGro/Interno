@@ -1,5 +1,7 @@
 'use strict';
 
+const dataExchange = new Vue();
+
 Vue.component('blog-details', {
   data() {
     return {
@@ -83,6 +85,20 @@ Vue.component('blog-list', {
     }
   },
 
+  methods: {
+    handleTagClicked(tag) {
+      this.selectedTag = tag;
+      console.log(this.selectedTag);
+    }
+  },
+
+  created() {
+    dataExchange.$on('selected-tag', tag => {
+      this.selectedTag = tag;
+
+    });
+  },
+
   template: `
   <div>
     <ol class="blog__ol">
@@ -97,23 +113,24 @@ Vue.component('blog-list', {
 Vue.component('taglist', {
   data() {
     return {
-      tags: ['Kitchen', 'Bedroom', 'Building', 'Architecture', 'Kitchen Planning', 'Bedroom2']
+      tags: ['Kitchen', 'Bedroom', 'Building', 'Architecture', 'Kitchen Planning', 'Bedroom2'],
+      selectedTag: '',
     };
   },
 
   methods: {
-    selectTag() {
-      parent.currentTag = 'test';
-      console.log();
+    handleClick(tag) {
+      dataExchange.$emit('selected-tag', tag);
+      this.selectedTag = tag;
     }
   },
 
   template: `
   <div class="tags__container">
-    <div v-for="(tag, index) in tags" :key="index" class="tags__tag">{{ tag }}</div>
+    <div v-for="(tag, index) in tags" :key="index" class="tags__tag" @click="handleClick(tag)" :class="{ 'tags__tag_clicked': tag === selectedTag }">{{ tag }}</div>
   </div>
   `,
-})
+});
 
 new Vue({
   el: '#app',
