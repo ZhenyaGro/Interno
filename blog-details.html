@@ -28,11 +28,29 @@
     </header>
     <div class="page-view_blog-details container">
     </div>
-
-    <section class="blog container">
-      <blog-details></blog-details>
-    </section>
-    <div class="tags"></div>
+    <div class="content container">
+      <section class="blog">
+        <blog-details class="blog__blog-details"></blog-details>
+        <!-- <blog-list></blog-list> -->
+        <div class="blog__blog-list">
+          <h1 class="blog__heading">Design sprints are great</h1>
+          <p class="blog__text">
+            Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular
+            belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.
+          </p>
+          <blog-list></blog-list>
+          <img src="./images/article-list_image.png" alt="list image" class="blog__list-image">
+          <p class="blog__text">
+            Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular
+            belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.
+          </p>
+        </div>
+      </section>
+      <div class="tags">
+        <h2 class="tags__heading">Tags</h2>
+        <taglist></taglist>
+      </div>
+    </div>
   </div>
   <script src="./scripts/blog-details.js"></script>
 </body>

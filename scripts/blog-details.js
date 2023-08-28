@@ -57,20 +57,47 @@ Vue.component('blog-item', {
 Vue.component('blog-list', {
   data() {
     return {
-      articles: ["Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.", "Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.", "Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered."],
+      articles: [
+        {
+          text: "Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.",
+          tags: ['Kitchen', 'Bedroom'],
+        },
+        {
+          text: "Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.",
+          tags: ['Building', 'Architecture'],
+        },
+        {
+          text: "Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.",
+          tags: ['Kitchen Planning', 'Bedroom2'],
+        }
+      ],
     };
   },
 
   template: `
   <div>
-    <ol>
-      <li v-for="(article, index) in articles" :key="index">
-        <blog-item  class="blog__text" :text="article" />
+    <ol class="blog__ol">
+      <li v-for="(article, index) in articles" :key="index" class="blog__li">
+        <blog-item :text="article.text" />
       </li>
     </ol>
   </div>
   `,
 });
+
+Vue.component('taglist', {
+  data() {
+    return {
+      tags: ['Kitchen', 'Bedroom', 'Building', 'Architecture', 'Kitchen Planning', 'Bedroom']
+    };
+  },
+
+  template: `
+  <div class="tags__container">
+    <div v-for="(tag, index) in tags" :key="index" class="tags__tag">{{ tag }}</div>
+  </div>
+  `,
+})
 
 new Vue({
   el: '#app',

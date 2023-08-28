@@ -2,7 +2,16 @@
   @include page-view_background('../images/blog-details-background.jpg', 351);
 }
 
+.content {
+  display: flex;
+  gap: 52px;
+}
+
 .blog {
+
+  &__blog-details {
+    margin-bottom: 27px;
+  }
 
   &__heading {
     font-size: 50px;
@@ -67,5 +76,54 @@
   &__quote::before,
   &__quote::after {
     content: '';
+  }
+
+  &__li::marker {
+    color: $brandColor;
+    font-size: 20px;
+    line-height: 125%; // 25px
+    letter-spacing: 0.4px;
+  }
+
+  &__list-image {
+    border-radius: 50px;
+    margin-bottom: 35px;
+  }
+}
+
+.tags {
+  min-width: 345px;
+
+  &__heading {
+    font-size: 25px;
+    line-height: 125%; // 31.25px
+    letter-spacing: 0.5px;
+    margin-bottom: 24px;
+  }
+
+  &__container {
+    display: flex;
+    height: fit-content;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 10px;
+  }
+
+  &__tag {
+    padding: 10px 30px;
+    border-radius: 10px;
+    background: #F4F0EC;
+    width: max-content;
+    @extend %textAdditional;
+    text-align: center;
+    font-size: 18px;
+    line-height: 125%; // 22.5px
+    letter-spacing: 0.36px;
+    transition: all .2s;
+
+    &_clicked {
+      background-color: $fontColorMain;
+      color: white;
+    }
   }
 }

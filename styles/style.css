@@ -1,4 +1,4 @@
-.blog__text, .blog__info, .post__additional, .post__text, .page-view__breadcrumb, .footer__page, .footer__text, .news__date, .news__sticker, .news__text, .results__text, .projects__category, .projects__text, .index-main__text, .header__link {
+.tags__tag, .blog__text, .blog__info, .post__additional, .post__text, .page-view__breadcrumb, .footer__page, .footer__text, .news__date, .news__sticker, .news__text, .results__text, .projects__category, .projects__text, .index-main__text, .header__link {
   color: #4D5053;
   font-family: "Jost";
   font-size: 22px;
@@ -440,6 +440,14 @@ a {
   margin-bottom: 200px;
 }
 
+.content {
+  display: flex;
+  gap: 52px;
+}
+
+.blog__blog-details {
+  margin-bottom: 27px;
+}
 .blog__heading {
   font-size: 50px;
   line-height: 125%;
@@ -492,6 +500,50 @@ a {
 .blog__quote::before, .blog__quote::after {
   content: "";
 }
+.blog__li::marker {
+  color: #CDA274;
+  font-size: 20px;
+  line-height: 125%;
+  letter-spacing: 0.4px;
+}
+.blog__list-image {
+  border-radius: 50px;
+  margin-bottom: 35px;
+}
+
+.tags {
+  min-width: 345px;
+}
+.tags__heading {
+  font-size: 25px;
+  line-height: 125%;
+  letter-spacing: 0.5px;
+  margin-bottom: 24px;
+}
+.tags__container {
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 10px;
+}
+.tags__tag {
+  padding: 10px 30px;
+  border-radius: 10px;
+  background: #F4F0EC;
+  width: -moz-max-content;
+  width: max-content;
+  text-align: center;
+  font-size: 18px;
+  line-height: 125%;
+  letter-spacing: 0.36px;
+  transition: all 0.2s;
+}
+.tags__tag_clicked {
+  background-color: #292F36;
+  color: white;
+}
 
 @media (any-hover: hover) {
   .header__link:hover {
@@ -533,5 +585,12 @@ a {
   }
   .news__page-next:hover svg circle {
     fill: #CDA274;
+  }
+  .blog__breadcrumb:hover a {
+    color: #CDA274;
+  }
+  .tags__tag:hover {
+    background-color: #292F36;
+    color: white;
   }
 }/*# sourceMappingURL=style.css.map */

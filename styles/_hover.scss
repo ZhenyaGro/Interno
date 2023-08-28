@@ -68,4 +68,19 @@
       fill: $brandColor;
     }
   }
+
+  // Blog details
+  .blog {
+    &__breadcrumb:hover a {
+      color: $brandColor;
+    }
+  }
+
+  .tags {
+
+    &__tag:hover {
+      background-color: $fontColorMain;
+      color: white;
+    }
+  }
 }
