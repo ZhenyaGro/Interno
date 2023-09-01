@@ -13,9 +13,8 @@ export default {
   name: 'BlogList',
   computed: {
     filteredArticles() {
-      if (!this.selectedTag)
-        return this.articles;
-      return this.articles.filter(article => article.tags.includes(this.selectedTag));
+      return !this.selectedTag ? this.articles
+        : this.articles.filter(article => article.tags.includes(this.selectedTag));
     }
   },
 
