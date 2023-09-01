@@ -1,7 +1,7 @@
 <template>
   <div class="content container">
     <BlogDetails></BlogDetails>
-    <TagList @testEvent="testMethod"></TagList>
+    <TagList @selectTag="getSelectedTag"></TagList>
   </div>
 </template>
 
@@ -19,7 +19,7 @@ export default {
     TagList
   },
   methods: {
-    testMethod(tag) {
+    getSelectedTag(tag) {
       this.selectedTag = tag;
     }
   },

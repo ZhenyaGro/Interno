@@ -20,7 +20,7 @@ export default {
       // dataExchange.$emit('selected-tag', tag); // Worked till cli
 
       this.selectedTag = this.selectedTag === tag ? '' : tag;
-      this.$emit('testEvent', this.selectedTag);
+      this.$emit('selectTag', this.selectedTag);
     }
   },
 }
