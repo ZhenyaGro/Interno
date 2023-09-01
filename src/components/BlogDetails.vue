@@ -1,7 +1,7 @@
 <template>
   <article class="blog__article">
     <h1 class="blog__heading">{{ heading }}</h1>
-    <img :src="imgPath" alt="article image" class="blog__img">
+    <img :src="imgURL" alt="article image" class="blog__img">
     <div class="blog__info">
       <span class="blog__date">{{ date }}</span>
       <span class="blog__breadcrumbs">
@@ -27,13 +27,23 @@
 
 <script>
 export default {
-  name: 'BlogDetails',
-  heading: 'Let’s Get Solution for Building Construction Work',
-  imgPath: './images/blog-details_article-image.png',
-  date: '26 December, 2022',
-  breadcrumbs: ['Interior', 'Home', 'Decore'],
-  text: ["Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don't look even slightly believable.", 'Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.'],
-  hasQuote: true,
-  quote: 'The details are not the details. They make the design.'
+  data() {
+    return {
+      name: 'BlogDetails',
+      heading: 'Let’s Get Solution for Building Construction Work',
+      imgPath: '/assets/images/blog-details_article-image.png', // Почему ссылка не работает?
+      date: '26 December, 2022',
+      breadcrumbs: ['Interior', 'Home', 'Decore'],
+      text: ["Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don't look even slightly believable.", 'Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.'],
+      hasQuote: true,
+      quote: 'The details are not the details. They make the design.',
+    }
+  },
+
+  computed: {
+    imgURL() {
+      return require(`/src/assets/images/blog-details_article-image.png`)
+    }
+  }
 }
 </script>
