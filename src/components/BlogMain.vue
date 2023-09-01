@@ -1,10 +1,10 @@
 <template>
   <div class="content container">
     <div>
-      <BlogDetails></BlogDetails>
-      <BlogList></BlogList>
+      <BlogDetails />
+      <BlogList :filterProp="selectedTag" />
     </div>
-    <TagList @selectTag="getSelectedTag"></TagList>
+    <TagList @selectTag="getSelectedTag" />
   </div>
 </template>
 

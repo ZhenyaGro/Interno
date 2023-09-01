@@ -16,6 +16,7 @@ export default {
     BlogItem
   },
   name: 'BlogList',
+  props: ['filterProp'],
   data() {
     return {
       articles: [
@@ -32,27 +33,13 @@ export default {
           tags: ['Kitchen Planning', 'Bedroom2'],
         }
       ],
-      selectedTag: '',
     };
   },
   computed: {
     filteredArticles() {
-      return !this.selectedTag ? this.articles
-        : this.articles.filter(article => article.tags.includes(this.selectedTag));
+      return !this.filterProp ? this.articles
+        : this.articles.filter(article => article.tags.includes(this.filterProp));
     }
-  },
-
-  methods: {
-    handleTagClicked(tag) {
-      this.selectedTag = tag;
-      console.log(this.selectedTag);
-    }
-  },
-
-  created() {
-    // dataExchange.$on('selected-tag', tag => {
-    //   this.selectedTag = tag;
-    // });
   }
 }
 </script>
