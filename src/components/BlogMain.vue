@@ -1,12 +1,16 @@
 <template>
   <div class="content container">
-    <BlogDetails></BlogDetails>
+    <div>
+      <BlogDetails></BlogDetails>
+      <BlogList></BlogList>
+    </div>
     <TagList @selectTag="getSelectedTag"></TagList>
   </div>
 </template>
 
 <script>
 import BlogDetails from './BlogDetails.vue';
+import BlogList from './BlogList.vue';
 import TagList from './TagList.vue';
 export default {
   data() {
@@ -16,6 +20,7 @@ export default {
   },
   components: {
     BlogDetails,
+    BlogList,
     TagList
   },
   methods: {
