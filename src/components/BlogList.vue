@@ -27,9 +27,9 @@ export default {
   },
 
   created() {
-    dataExchange.$on('selected-tag', tag => {
-      this.selectedTag = tag;
-    });
+    // dataExchange.$on('selected-tag', tag => {
+    //   this.selectedTag = tag;
+    // });
   }
 }
 </script>

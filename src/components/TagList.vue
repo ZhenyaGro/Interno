@@ -17,7 +17,7 @@ export default {
 
   methods: {
     handleClick(tag) {
-      dataExchange.$emit('selected-tag', tag);
+      // dataExchange.$emit('selected-tag', tag); // Worked till cli
       this.selectedTag = tag;
     }
   },
