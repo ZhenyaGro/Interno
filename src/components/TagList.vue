@@ -18,7 +18,9 @@ export default {
   methods: {
     handleClick(tag) {
       // dataExchange.$emit('selected-tag', tag); // Worked till cli
-      this.selectedTag = tag;
+
+      this.selectedTag = this.selectedTag === tag ? '' : tag;
+      this.$emit('testEvent', this.selectedTag);
     }
   },
 }
