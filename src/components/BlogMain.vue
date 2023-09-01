@@ -1,7 +1,7 @@
 <template>
   <div class="content container">
     <BlogDetails></BlogDetails>
-    <TagList></TagList>
+    <TagList @testEvent="testMethod"></TagList>
   </div>
 </template>
 
@@ -9,9 +9,19 @@
 import BlogDetails from './BlogDetails.vue';
 import TagList from './TagList.vue';
 export default {
+  data() {
+    return {
+      selectedTag: ''
+    }
+  },
   components: {
     BlogDetails,
     TagList
-  }
+  },
+  methods: {
+    testMethod(tag) {
+      this.selectedTag = tag;
+    }
+  },
 }
 </script>
