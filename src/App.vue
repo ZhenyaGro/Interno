@@ -8,7 +8,7 @@
 
 <script>
 import styles from '../styles/style.css'
-import BlogMain from './components/BlogMain.vue';
+import BlogMain from './components/elements/BlogMain.vue';
 
 // const dataExchange = new Vue();
 export default {
