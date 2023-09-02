@@ -4,6 +4,7 @@
   <div>
     <Header></Header>
     <BlogMain></BlogMain>
+    <Footer></Footer>
   </div>
 </template>
 
@@ -11,13 +12,15 @@
 import styles from '../styles/style.css'
 import Header from './components/elements/Header.vue';
 import BlogMain from './components/elements/BlogMain.vue';
+import Footer from './components/elements/Footer.vue';
 
 // const dataExchange = new Vue();
 export default {
   name: 'App',
   components: {
     Header,
-    BlogMain
+    BlogMain,
+    Footer
   }
 }
 </script>
