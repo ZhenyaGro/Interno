@@ -2,10 +2,7 @@
 <template>
   <footer class="footer container">
     <div class="footer__main">
-      <a href="index.html" class="footer__homelink">
-        <img :src="logoUrl" alt="logo" class="header__logo">
-        Interno
-      </a>
+      <Logo />
       <p class="footer__text">It is a long established fact that a reader will be distracted lookings.</p>
       <div class="footer__social">
         <a href="#" class="footer__social-link">
@@ -42,6 +39,8 @@
 </template>
 
 <script>
+import Logo from './Logo.vue';
+
 export default {
   data() {
     return {
@@ -50,10 +49,11 @@ export default {
       phone: '(123) 456 - 7890'
     }
   },
+  name: 'Footer',
+  components: {
+    Logo
+  },
   computed: {
-    logoUrl() {
-      return require(`/src/assets/images/logo.png`);
-    }
   },
 };
 </script>

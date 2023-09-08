@@ -1,10 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <header class="header container">
-    <a :href="getHeaderData.homelink" class="header__homelink">
-      <img :src="getHeaderData.logoUrl" alt="logo" class="header__logo">
-      {{ getHeaderData.companyName }}
-    </a>
+    <Logo />
     <nav class="header__links">
       <a v-for="(navObj, index) in getHeaderData.navigator" :key="index" :href="navObj.link" class="header__link">{{
         navObj.text }}</a>
@@ -14,9 +11,13 @@
 
 <script>
 import { mapGetters } from 'vuex';
+import Logo from './Logo.vue';
 
 export default {
   name: 'Header',
+  components: {
+    Logo
+  },
   computed: {
     ...mapGetters(['getHeaderData']),
   },

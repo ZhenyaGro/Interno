@@ -3,6 +3,11 @@ import { createStore } from 'vuex';
 export default {
   state() {
     return {
+      logo: {
+        homelink: 'index.html',
+        logoUrl: './img/logo.png',
+        companyName: 'Interno',
+      },
       header: {
         homelink: 'index.html',
         logoUrl: './img/logo.png',
@@ -20,10 +25,16 @@ export default {
             text: 'Blog'
           }
         ]
+      },
+      footer: {
+
       }
     }
   },
   getters: {
+    getLogoData(state) {
+      return state.logo;
+    },
     getHeaderData(state) {
       return state.header;
     },
