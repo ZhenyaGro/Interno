@@ -3,6 +3,12 @@ import { createStore } from 'vuex';
 export default createStore({
   state() {
     return {
+      indexMain: {
+        heading: 'Let Your Home Be Unique',
+        text: 'There are many variations of the passages of lorem Ipsum fromavailable, majority.',
+        linkText: 'Get Started',
+        link: '#'
+      },
       projects: {
         heading: 'Follow Our Projects',
         paragraph: 'It is a long established fact that a reader will be distracted by the of readable content of page lookings at its layouts points.',
@@ -32,6 +38,9 @@ export default createStore({
     }
   },
   getters: {
+    getIndexMainData(state) {
+      return state.indexMain;
+    },
     getProjectsData(state) {
       return state.projects;
     }
