@@ -1,25 +1,24 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <header class="header container">
-    <a href="index.html" class="header__homelink">
-      <img :src="logoUrl" alt="logo" class="header__logo">
-      Interno
+    <a :href="getHeaderData.homelink" class="header__homelink">
+      <img :src="getHeaderData.logoUrl" alt="logo" class="header__logo">
+      {{ getHeaderData.companyName }}
     </a>
     <nav class="header__links">
-      <a href="index.html" class="header__link">Home</a>
-      <a href="#" class="header__link">Project</a>
-      <a href="blog.html" class="header__link">Blog</a>
+      <a v-for="(navObj, index) in getHeaderData.navigator" :key="index" :href="navObj.link" class="header__link">{{
+        navObj.text }}</a>
     </nav>
   </header>
 </template>
 
 <script>
-export default {
+import { mapGetters } from 'vuex';
 
+export default {
+  name: 'Header',
   computed: {
-    logoUrl() {
-      return require(`/src/assets/images/logo.png`);
-    }
+    ...mapGetters(['getHeaderData']),
   },
 
 };
