@@ -34,7 +34,25 @@ export default createStore({
             text: 'Decor / Artchitecture'
           }
         ],
-      }
+      },
+      results: [
+        {
+          heading: 12,
+          text: 'Years Of Experiance'
+        },
+        {
+          heading: 85,
+          text: 'Success Project'
+        },
+        {
+          heading: 15,
+          text: 'Active Project'
+        },
+        {
+          heading: 95,
+          text: 'Happy Customers'
+        },
+      ]
     }
   },
   getters: {
@@ -43,6 +61,9 @@ export default createStore({
     },
     getProjectsData(state) {
       return state.projects;
+    },
+    getResultsData(state) {
+      return state.results;
     }
   },
   mutations: {
