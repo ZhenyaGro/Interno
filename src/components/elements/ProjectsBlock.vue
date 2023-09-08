@@ -1,7 +1,6 @@
 <template>
   <a href="#" class="projects__block">
-    <img :src="getImg" alt="project image" class="projects__img">
-    <!-- <div class="projects__img projects__img_1"></div> -->
+    <img :src="imgUrl" alt="project image" class="projects__img">
     <div class="projects__info">
       <div class="projects__description">
         <h3 class="projects__project-name">{{ heading }}</h3>
@@ -19,10 +18,5 @@
 export default {
   name: 'ProjectsBlock',
   props: ['imgUrl', 'heading', 'paragraph'],
-  methods: {
-    getImg() {
-      return require(imgUrl);
-    }
-  },
 };
 </script>
