@@ -127,4 +127,16 @@ export default {
     max-width: 258px;
   }
 }
+
+@media (any-hover: hover) {
+  .footer {
+    &__social-link:hover svg path {
+      fill: $brandColor;
+    }
+
+    &__page:hover {
+      color: $brandColor;
+    }
+  }
+}
 </style>

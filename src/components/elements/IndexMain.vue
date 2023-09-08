@@ -72,4 +72,14 @@ export default {
     transition: all .3s;
   }
 }
+
+@media (any-hover: hover) {
+
+  .index-main {
+    &__link:hover {
+      background-color: white;
+      color: $brandColor;
+    }
+  }
+}
 </style>

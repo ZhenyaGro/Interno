@@ -1,46 +1,4 @@
 @media (any-hover: hover) {
-  .header {
-    &__link:hover {
-      color: $brandColor;
-    }
-  }
-
-  .index-main {
-    &__link:hover {
-      background-color: white;
-      color: $brandColor;
-    }
-  }
-
-  .projects {
-    &__block:hover svg path {
-      stroke: white;
-    }
-
-    &__block:hover svg circle {
-      fill: $brandColor;
-    }
-  }
-
-  .news {
-    &__block:hover {
-      background-color: $hoverAddColor;
-    }
-
-    &__block:hover svg circle {
-      fill: white;
-    }
-  }
-
-  .footer {
-    &__social-link:hover svg path {
-      fill: $brandColor;
-    }
-
-    &__page:hover {
-      color: $brandColor;
-    }
-  }
 
   // Blog
   .page-view {

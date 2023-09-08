@@ -86,4 +86,16 @@ export default {
     text-transform: capitalize;
   }
 }
+
+@media (any-hover: hover) {
+  .news {
+    &__block:hover {
+      background-color: $hoverAddColor;
+    }
+
+    &__block:hover svg circle {
+      fill: white;
+    }
+  }
+}
 </style>

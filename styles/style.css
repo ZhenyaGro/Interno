@@ -267,31 +267,6 @@ a {
 }
 
 @media (any-hover: hover) {
-  .header__link:hover {
-    color: #CDA274;
-  }
-  .index-main__link:hover {
-    background-color: white;
-    color: #CDA274;
-  }
-  .projects__block:hover svg path {
-    stroke: white;
-  }
-  .projects__block:hover svg circle {
-    fill: #CDA274;
-  }
-  .news__block:hover {
-    background-color: #F4F0EC;
-  }
-  .news__block:hover svg circle {
-    fill: white;
-  }
-  .footer__social-link:hover svg path {
-    fill: #CDA274;
-  }
-  .footer__page:hover {
-    color: #CDA274;
-  }
   .page-view__breadcrumb:hover a {
     color: #CDA274;
   }

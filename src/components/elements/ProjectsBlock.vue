@@ -101,6 +101,18 @@ export default {
     @extend %textAdditional;
     letter-spacing: 0.22px;
   }
+}
 
+@media (any-hover: hover) {
+
+  .projects {
+    &__block:hover svg path {
+      stroke: white;
+    }
+
+    &__block:hover svg circle {
+      fill: $brandColor;
+    }
+  }
 }
 </style>

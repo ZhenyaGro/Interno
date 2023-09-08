@@ -54,4 +54,12 @@ export default {
     transition: color .1s;
   }
 }
+
+@media (any-hover: hover) {
+  .header {
+    &__link:hover {
+      color: $brandColor;
+    }
+  }
+}
 </style>
