@@ -1,4 +1,4 @@
-.tags__tag, .blog__text, .blog__info, .post__additional, .post__text, .page-view__breadcrumb, .news__date, .news__sticker, .news__text, .results__text, .projects__category, .projects__text, .index-main__text {
+.tags__tag, .blog__text, .blog__info, .post__additional, .post__text, .page-view__breadcrumb, .news__date, .news__sticker, .news__text, .results__text, .projects__category, .projects__text {
   color: #4D5053;
   font-family: "Jost";
   font-size: 22px;
@@ -36,49 +36,6 @@ a {
 .container {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
-}
-
-.index-main {
-  background-image: url(../images/index-main_background.png);
-  border-radius: 50px;
-  background-repeat: no-repeat;
-  height: 758px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 57px;
-  margin-bottom: 96px;
-  padding-left: 52px;
-  padding-right: 52px;
-}
-.index-main__heading {
-  font-size: 65px;
-  line-height: 125%;
-  max-width: 434px;
-  margin-bottom: 18px;
-}
-.index-main__text {
-  letter-spacing: 0.22px;
-  margin-bottom: 21px;
-  max-width: 434px;
-}
-.index-main__link {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 26px 49px 26px 48px;
-  border-radius: 18px;
-  background: #292F36;
-  box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
-  font-family: "Jost";
-  color: white;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 125%;
-  letter-spacing: 0.36px;
-  transition: all 0.3s;
 }
 
 .projects {
