@@ -2,6 +2,7 @@
   <div>
     <Header></Header>
     <IndexMain></IndexMain>
+    <OurProjects></OurProjects>
     <Footer></Footer>
   </div>
 </template>
@@ -10,6 +11,7 @@
 import styles from '../styles/style.css'
 import Header from './components/elements/Header.vue';
 import IndexMain from './components/elements/IndexMain.vue';
+import OurProjects from './components/elements/OurProjects.vue';
 import Footer from './components/elements/Footer.vue';
 
 export default {
@@ -17,6 +19,7 @@ export default {
   components: {
     Header,
     IndexMain,
+    OurProjects,
     Footer
   }
 }
