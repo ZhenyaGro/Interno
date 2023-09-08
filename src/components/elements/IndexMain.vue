@@ -40,7 +40,7 @@ export default {
 @import '/styles/_variables.scss';
 
 .index-main {
-  background-image: url(/src/assets/images/index-main_background.png);
+  background-image: url(/public/img/index-main_background.png);
   border-radius: 50px;
   background-repeat: no-repeat;
   height: 758px;
