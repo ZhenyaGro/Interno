@@ -52,7 +52,34 @@ export default createStore({
           heading: 95,
           text: 'Happy Customers'
         },
-      ]
+      ],
+      news: {
+        heading: 'Articles & News',
+        text: 'It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using.',
+        blocks: [
+          {
+            link: '#',
+            imgUrl: './img/news1.png',
+            sticker: 'Living Design',
+            description: 'Low Cost Latest Invented Interior Designing Ideas.',
+            date: '22 December, 2022'
+          },
+          {
+            link: '#',
+            imgUrl: './img/news2.png',
+            sticker: 'Living Design',
+            description: 'Low Cost Latest Invented Interior Designing Ideas.',
+            date: '22 December, 2022'
+          },
+          {
+            link: '#',
+            imgUrl: './img/news3.png',
+            sticker: 'Interior Design',
+            description: 'Best For Any Office & Business Interior Solution',
+            date: '25 December, 2022'
+          }
+        ]
+      }
     }
   },
   getters: {
@@ -64,6 +91,9 @@ export default createStore({
     },
     getResultsData(state) {
       return state.results;
+    },
+    getNewsData(state) {
+      return state.news;
     }
   },
   mutations: {
