@@ -1,5 +1,3 @@
-import { createStore } from 'vuex';
-
 export default {
   state() {
     return {
@@ -27,7 +25,27 @@ export default {
         ]
       },
       footer: {
-
+        text: 'It is a long established fact that a reader will be distracted lookings.',
+        social: ['#', '#'],
+        pages: [
+          {
+            link: '#',
+            text: 'Home'
+          },
+          {
+            link: '#',
+            text: 'Project'
+          },
+          {
+            link: '#',
+            text: 'Blog'
+          }
+        ],
+        contacts: {
+          address: '55 East Birchwood Ave. Brooklyn, New York 11201',
+          email: 'contact@interno.com',
+          phone: '(123) 456 - 7890'
+        }
       }
     }
   },
@@ -38,7 +56,9 @@ export default {
     getHeaderData(state) {
       return state.header;
     },
-
+    getFooterData(state) {
+      return state.footer;
+    }
   },
   mutations: {
   }
