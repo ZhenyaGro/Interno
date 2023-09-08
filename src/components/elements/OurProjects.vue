@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import { mapGetters, mapMutations, mapState } from 'vuex';
+import { mapGetters } from 'vuex';
 import ProjectsBlock from './ProjectsBlock.vue';
 
 export default {
