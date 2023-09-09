@@ -19,11 +19,6 @@ export default {
   components: {
     Header,
     Footer
-  },
-  data() {
-    return {
-      page: 'home',
-    }
   }
 }
 </script>
