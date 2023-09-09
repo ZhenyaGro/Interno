@@ -2,10 +2,7 @@
   <div>
     <PageView :data="getBlogPageViewData" />
     <BlogPost />
-    <BlogNews />
-    <hr>
     <News :data="getBlogNewsData" />
-
   </div>
 </template>
 
