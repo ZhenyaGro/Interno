@@ -8,9 +8,9 @@
 
 <script>
 import styles from '../styles/style.css'
-import Header from './components/elements/Header.vue';
-import PageView from './components/elements/PageView.vue'
-import Footer from './components/elements/Footer.vue';
+import Header from './components/Header.vue';
+import PageView from './components/PageView.vue'
+import Footer from './components/Footer.vue';
 import { mapGetters } from 'vuex';
 
 

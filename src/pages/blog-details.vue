@@ -8,9 +8,9 @@
 
 <script>
 import styles from '../styles/style.css'
-import Header from './components/elements/Header.vue';
-import BlogMain from './components/elements/BlogMain.vue';
-import Footer from './components/elements/Footer.vue';
+import Header from './components/Header.vue';
+import BlogMain from './components/BlogMain.vue';
+import Footer from './components/Footer.vue';
 
 export default {
   name: 'App',

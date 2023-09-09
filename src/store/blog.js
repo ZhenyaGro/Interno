@@ -4,7 +4,7 @@ export default {
       pageView: {
         heading: 'Articles & News',
         breadcrumbs: ['Home', 'Blog']
-      }
+      },
     }
   },
   getters: {
