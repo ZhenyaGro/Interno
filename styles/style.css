@@ -5,39 +5,6 @@
   line-height: 150%;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "DM Serif Display", serif;
-  color: #292F36;
-  font-style: normal;
-  font-weight: 400;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  font-size: inherit;
-  font-weight: inherit;
-}
-
-a {
-  color: #292F36;
-  text-decoration: none;
-}
-
-.container {
-  padding-left: calc(50% - 600px);
-  padding-right: calc(50% - 600px);
-}
-
 .page-view {
   background-image: url("../images/blog-background.jpg");
   background-repeat: no-repeat;
