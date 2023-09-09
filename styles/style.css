@@ -147,12 +147,6 @@
 }
 
 @media (any-hover: hover) {
-  .news__page-number:hover {
-    background-color: #CDA274;
-  }
-  .news__page-next:hover svg circle {
-    fill: #CDA274;
-  }
   .blog__breadcrumb:hover a {
     color: #CDA274;
   }

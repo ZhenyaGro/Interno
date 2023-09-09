@@ -1,15 +1,5 @@
 @media (any-hover: hover) {
 
-  .news {
-    &__page-number:hover {
-      background-color: $brandColor;
-    }
-
-    &__page-next:hover svg circle {
-      fill: $brandColor;
-    }
-  }
-
   // Blog details
   .blog {
     &__breadcrumb:hover a {
@@ -18,7 +8,6 @@
   }
 
   .tags {
-
     &__tag:hover {
       background-color: $fontColorMain;
       color: white;
