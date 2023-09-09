@@ -19,3 +19,9 @@ export default {
   },
 }
 </script>
+
+<style lang="scss">
+// .page-view {
+//   @include page-view_background('/public/img/blog-background.jpg', 356);
+// }
+</style>
