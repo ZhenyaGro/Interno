@@ -1,15 +1,5 @@
 @media (any-hover: hover) {
 
-  .post {
-    &__block:hover {
-      background-color: #F4F0EC;
-
-      & svg circle {
-        fill: white;
-      }
-    }
-  }
-
   .news {
     &__page-number:hover {
       background-color: $brandColor;

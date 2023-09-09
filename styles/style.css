@@ -1,51 +1,8 @@
-.tags__tag, .blog__text, .blog__info, .post__additional, .post__text {
+.tags__tag, .blog__text, .blog__info {
   color: #4D5053;
   font-family: "Jost";
   font-size: 22px;
   line-height: 150%;
-}
-
-.post {
-  margin-bottom: 150px;
-}
-.post__heading {
-  font-size: 50px;
-  line-height: 125%;
-  margin-bottom: 27px;
-}
-.post__block {
-  display: flex;
-  align-items: center;
-  gap: 65px;
-  border-radius: 62px;
-  border: 1px solid #E7E7E7;
-  box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
-  padding: 22px;
-  transition: background-color 0.2s;
-}
-.post__block svg circle {
-  transition: fill 0.2s;
-}
-.post__img {
-  border-radius: 50px;
-}
-.post__info {
-  max-width: 489px;
-}
-.post__title {
-  font-size: 25px;
-  line-height: 125%;
-  letter-spacing: 0.5px;
-  margin-bottom: 22px;
-}
-.post__text {
-  letter-spacing: 0.22px;
-  margin-bottom: 41px;
-}
-.post__additional {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .news__heading_left {
@@ -190,12 +147,6 @@
 }
 
 @media (any-hover: hover) {
-  .post__block:hover {
-    background-color: #F4F0EC;
-  }
-  .post__block:hover svg circle {
-    fill: white;
-  }
   .news__page-number:hover {
     background-color: #CDA274;
   }
