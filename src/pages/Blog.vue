@@ -5,7 +5,6 @@
 </template>
 
 <script>
-// import styles from '../styles/style.css';
 import PageView from '@/components/PageView.vue';
 import { mapGetters } from 'vuex';
 

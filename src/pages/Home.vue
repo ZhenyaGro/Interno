@@ -8,7 +8,6 @@
 </template>
 
 <script>
-// import styles from '../styles/style.css'
 import IndexMain from '@/components/IndexMain.vue';
 import OurProjects from '@/components/OurProjects.vue';
 import Results from '@/components/Results.vue';
