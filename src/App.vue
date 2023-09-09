@@ -63,4 +63,9 @@ a {
   padding-left: $containerPadding;
   padding-right: $containerPadding;
 }
+
+// For Blog page
+.page-view {
+  @include page-view_background('/images/blog-background.jpg', 356);
+}
 </style>

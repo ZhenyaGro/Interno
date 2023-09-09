@@ -22,7 +22,6 @@ export default {
 @import '/styles/_variables.scss';
 
 .page-view {
-  @include page-view_background('/images/blog-background.jpg', 356);
   display: flex;
   flex-direction: column;
   align-items: center;
