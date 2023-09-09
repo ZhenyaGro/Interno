@@ -1,27 +1,30 @@
 <template>
   <section class="news container">
     <header class="news__header">
-      <h1 class="news__heading">{{ getNewsData.heading }}</h1>
-      <p class="news__text">{{ getNewsData.text }}</p>
+      <h1 :class="headingStyle">{{ data.heading }}</h1>
+      <p v-if="data.text" class="news__text">{{ data.text }}</p>
     </header>
     <div class="news__blocks">
-      <NewsBlock v-for="(block, index) in getNewsData.blocks" :key="index" :link="block.link" :imgUrl="block.imgUrl"
+      <NewsBlock v-for="(block, index) in data.blocks" :key="index" :link="block.link" :imgUrl="block.imgUrl"
         :sticker="block.sticker" :description="block.description" :date="block.date" />
     </div>
   </section>
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
 import NewsBlock from './NewsBlock.vue';
 
 export default {
+  props: ['data'],
   name: 'News',
   components: {
     NewsBlock
   },
   computed: {
-    ...mapGetters(['getNewsData'])
+    headingStyle() {
+      return this.data.text ? 'news__heading' :
+        ['news__heading', 'news__heading_left']
+    }
   },
 }
 </script>
@@ -41,6 +44,10 @@ export default {
     font-size: 50px;
     line-height: 125%; // 62.5px
     letter-spacing: 1px;
+  }
+
+  &__heading_left {
+    text-align: left;
   }
 
   &__text {
