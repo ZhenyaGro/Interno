@@ -1,43 +1,8 @@
-.tags__tag, .blog__text, .blog__info, .post__additional, .post__text, .page-view__breadcrumb {
+.tags__tag, .blog__text, .blog__info, .post__additional, .post__text {
   color: #4D5053;
   font-family: "Jost";
   font-size: 22px;
   line-height: 150%;
-}
-
-.page-view {
-  background-image: url("../images/blog-background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 356px;
-  margin-bottom: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-}
-.page-view__info {
-  background-color: white;
-  border-radius: 37px 37px 0px 0px;
-  padding: 41px 78px;
-}
-.page-view__heading {
-  font-size: 50px;
-  line-height: 125%;
-}
-.page-view__breadcrumbs {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-.page-view__breadcrumb {
-  letter-spacing: 0.22px;
-}
-.page-view__breadcrumbs li:not(:last-child)::after {
-  display: inline-block;
-  content: "/";
-  padding-right: 8px;
 }
 
 .post {
