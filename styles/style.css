@@ -82,15 +82,6 @@
   transition: all 2s;
 }
 
-.page-view_blog-details {
-  background-image: url("../images/blog-details-background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 351px;
-  margin-bottom: 200px;
-}
-
 .content {
   display: flex;
   gap: 52px;

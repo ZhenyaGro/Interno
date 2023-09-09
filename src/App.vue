@@ -66,6 +66,6 @@ a {
 
 // For Blog page
 .page-view {
-  @include page-view_background('/images/blog-background.jpg', 356);
+  @include page-view_background('/public/img/blog-background.jpg', 356);
 }
 </style>
