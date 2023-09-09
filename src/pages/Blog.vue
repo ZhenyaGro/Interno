@@ -1,15 +1,21 @@
 <template>
   <div>
+    <PageView :data="getBlogPageViewData" />
   </div>
 </template>
 
 <script>
-import styles from '../styles/style.css'
+// import styles from '../styles/style.css';
+import PageView from '@/components/PageView.vue';
+import { mapGetters } from 'vuex';
 
-// const dataExchange = new Vue();
 export default {
-  name: 'blog',
+  name: 'Blog',
   components: {
-  }
+    PageView
+  },
+  computed: {
+    ...mapGetters(['getBlogPageViewData'])
+  },
 }
 </script>

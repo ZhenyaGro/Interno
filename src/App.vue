@@ -1,17 +1,22 @@
 <template>
   <div>
     <Header />
-    <PageView :data="getBlogPageViewData" />
+    <!-- <Home v-if="page === 'home'" />
+    <Blog v-if="page === 'blog'" />
+    <BlogDetails v-if="page === 'blogDetails'" /> -->
+    <router-view />
     <Footer />
   </div>
 </template>
 
 <script>
-import styles from '../styles/style.css'
+import styles from '../styles/style.css';
 import Header from './components/Header.vue';
-import PageView from './components/PageView.vue'
+import Home from './pages/Home.vue';
+import Blog from './pages/Blog.vue';
+import BlogDetails from './pages/BlogDetails.vue';
 import Footer from './components/Footer.vue';
-import { mapGetters } from 'vuex';
+
 
 
 
@@ -19,12 +24,19 @@ export default {
   name: 'App',
   components: {
     Header,
-    PageView,
+    // Home,
+    // Blog,
+    // BlogDetails,
     Footer
   },
-  computed: {
-    ...mapGetters(['getBlogPageViewData'])
+  data() {
+    return {
+      page: 'home',
+    }
   },
+  computed: {
+
+  }
 }
 </script>
 

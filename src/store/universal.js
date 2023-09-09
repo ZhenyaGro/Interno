@@ -2,24 +2,24 @@ export default {
   state() {
     return {
       logo: {
-        homelink: 'index.html',
+        homelink: '/home',
         logoUrl: './img/logo.png',
         companyName: 'Interno',
       },
       header: {
-        homelink: 'index.html',
+        homelink: '/home',
         logoUrl: './img/logo.png',
         companyName: 'Interno',
         navigator: [
           {
-            link: 'index.html',
+            link: '/home',
             text: 'Home'
           }, {
-            link: '#',
+            link: '/',
             text: 'Project'
           },
           {
-            link: 'blog.html',
+            link: '/blog',
             text: 'Blog'
           }
         ]
@@ -29,15 +29,15 @@ export default {
         social: ['#', '#'],
         pages: [
           {
-            link: '#',
+            link: '/home',
             text: 'Home'
           },
           {
-            link: '#',
+            link: '/',
             text: 'Project'
           },
           {
-            link: '#',
+            link: '/blog',
             text: 'Blog'
           }
         ],

@@ -22,9 +22,10 @@
       </div>
     </div>
     <div class="footer__pages">
-      <h3 href="#" class="footer__page_main">Pages</h3>
-      <a v-for="(page, index) in getFooterData.pages" :key="index" :href="page.link" class="footer__page">{{ page.text
-      }}</a>
+      <h3 class="footer__page_main">Pages</h3>
+      <router-link v-for="(page, index) in getFooterData.pages" :key="index" :to="page.link" class="footer__page">{{
+        page.text
+      }}</router-link>
     </div>
     <div class="footer__contacts">
       <h3 class="footer__contact_main">Contact</h3>

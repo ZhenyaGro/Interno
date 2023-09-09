@@ -1,7 +1,7 @@
 <template>
   <article class="blog__article">
     <h1 class="blog__heading">{{ heading }}</h1>
-    <img :src="imgURL" alt="article image" class="blog__img">
+    <img src="" alt="article image" class="blog__img">
     <div class="blog__info">
       <span class="blog__date">{{ date }}</span>
       <span class="blog__breadcrumbs">
@@ -41,9 +41,9 @@ export default {
   },
 
   computed: {
-    imgURL() {
-      return require(`/src/assets/images/blog-details_article-image.png`)
-    }
+    // imgURL() {
+    //   return require(`/src/assets/images/blog-details_article-image.png`)
+    // }
   }
 }
 </script>

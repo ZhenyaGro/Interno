@@ -1,8 +1,8 @@
 <template>
-  <a :href="getLogoData.homelink">
+  <router-link :to="getLogoData.homelink">
     <img :src="getLogoData.logoUrl" alt="logo" class="logo">
     {{ getLogoData.companyName }}
-  </a>
+  </router-link>
 </template>
 
 <script>

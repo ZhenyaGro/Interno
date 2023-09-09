@@ -3,8 +3,9 @@
   <header class="header container">
     <Logo />
     <nav class="header__links">
-      <a v-for="(navObj, index) in getHeaderData.navigator" :key="index" :href="navObj.link" class="header__link">{{
-        navObj.text }}</a>
+      <router-link v-for="(navObj, index) in getHeaderData.navigator" :key="index" class="header__link"
+        :to="navObj.link">{{
+          navObj.text }}</router-link>
     </nav>
   </header>
 </template>
