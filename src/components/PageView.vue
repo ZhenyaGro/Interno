@@ -57,4 +57,12 @@ export default {
     padding-right: 8px;
   }
 }
+
+@media (any-hover: hover) {
+  .page-view {
+    &__breadcrumb:hover a {
+      color: $brandColor;
+    }
+  }
+}
 </style>

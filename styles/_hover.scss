@@ -1,12 +1,5 @@
 @media (any-hover: hover) {
 
-  // Blog
-  .page-view {
-    &__breadcrumb:hover a {
-      color: $brandColor;
-    }
-  }
-
   .post {
     &__block:hover {
       background-color: #F4F0EC;

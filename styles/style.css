@@ -190,9 +190,6 @@
 }
 
 @media (any-hover: hover) {
-  .page-view__breadcrumb:hover a {
-    color: #CDA274;
-  }
   .post__block:hover {
     background-color: #F4F0EC;
   }
