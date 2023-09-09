@@ -1,9 +1,6 @@
 <template>
   <div>
     <Header />
-    <!-- <Home v-if="page === 'home'" />
-    <Blog v-if="page === 'blog'" />
-    <BlogDetails v-if="page === 'blogDetails'" /> -->
     <router-view />
     <Footer />
   </div>
@@ -12,9 +9,6 @@
 <script>
 import styles from '../styles/style.css';
 import Header from './components/Header.vue';
-import Home from './pages/Home.vue';
-import Blog from './pages/Blog.vue';
-import BlogDetails from './pages/BlogDetails.vue';
 import Footer from './components/Footer.vue';
 
 
@@ -24,18 +18,12 @@ export default {
   name: 'App',
   components: {
     Header,
-    // Home,
-    // Blog,
-    // BlogDetails,
     Footer
   },
   data() {
     return {
       page: 'home',
     }
-  },
-  computed: {
-
   }
 }
 </script>
