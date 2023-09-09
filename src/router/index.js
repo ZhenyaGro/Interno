@@ -6,17 +6,17 @@ import BlogDetails from '@/pages/BlogDetails.vue';
 const routes = [
   {
     path: '/home',
-    name: 'home',
+    name: 'Home',
     component: Home
   },
   {
     path: '/blog',
-    name: 'blog',
+    name: 'Blog',
     component: Blog
   },
   {
     path: '/blogDetails',
-    name: 'blogDetails',
+    name: 'BlogDetails',
     component: BlogDetails
   }
 ];
