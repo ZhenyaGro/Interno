@@ -20,7 +20,7 @@ import Footer from './components/Footer.vue';
 
 
 export default {
-  name: 'Index',
+  name: 'Home',
   components: {
     Header,
     IndexMain,
