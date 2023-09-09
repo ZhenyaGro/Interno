@@ -3,7 +3,7 @@
     <IndexMain />
     <OurProjects />
     <Results />
-    <News />
+    <News :data="getHomeNewsData" />
   </div>
 </template>
 
@@ -12,6 +12,7 @@ import IndexMain from '@/components/IndexMain.vue';
 import OurProjects from '@/components/OurProjects.vue';
 import Results from '@/components/Results.vue';
 import News from '@/components/News.vue';
+import { mapGetters } from 'vuex';
 
 
 export default {
@@ -21,6 +22,9 @@ export default {
     OurProjects,
     Results,
     News
-  }
+  },
+  computed: {
+    ...mapGetters(['getHomeNewsData'])
+  },
 }
 </script>
