@@ -23,7 +23,7 @@
     </div>
     <div class="footer__pages">
       <h3 class="footer__page_main">Pages</h3>
-      <router-link v-for="(page, index) in getFooterData.pages" :key="index" :to="page.link" class="footer__page">{{
+      <router-link v-for="(page, index) in getNavData" :key="index" :to="page.link" class="footer__page">{{
         page.text
       }}</router-link>
     </div>
@@ -48,7 +48,7 @@ export default {
     Logo
   },
   computed: {
-    ...mapGetters(['getFooterData'])
+    ...mapGetters(['getFooterData', 'getNavData'])
   },
 };
 </script>
