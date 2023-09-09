@@ -90,7 +90,7 @@ export default {
     getResultsData(state) {
       return state.results;
     },
-    getNewsData(state) {
+    getHomeNewsData(state) {
       return state.news;
     }
   },
