@@ -9,44 +9,30 @@ export default {
       header: {
         homelink: '/home',
         logoUrl: './img/logo.png',
-        companyName: 'Interno',
-        navigator: [
-          {
-            link: '/home',
-            text: 'Home'
-          }, {
-            link: '/',
-            text: 'Project'
-          },
-          {
-            link: '/blog',
-            text: 'Blog'
-          }
-        ]
+        companyName: 'Interno'
       },
       footer: {
         text: 'It is a long established fact that a reader will be distracted lookings.',
         social: ['#', '#'],
-        pages: [
-          {
-            link: '/home',
-            text: 'Home'
-          },
-          {
-            link: '/',
-            text: 'Project'
-          },
-          {
-            link: '/blog',
-            text: 'Blog'
-          }
-        ],
         contacts: {
           address: '55 East Birchwood Ave. Brooklyn, New York 11201',
           email: 'contact@interno.com',
           phone: '(123) 456 - 7890'
         }
-      }
+      },
+      navigator: [
+        {
+          link: '/home',
+          text: 'Home'
+        }, {
+          link: '/',
+          text: 'Project'
+        },
+        {
+          link: '/blog',
+          text: 'Blog'
+        }
+      ]
     }
   },
   getters: {
@@ -58,6 +44,9 @@ export default {
     },
     getFooterData(state) {
       return state.footer;
+    },
+    getNavData(state) {
+      return state.navigator;
     }
   },
   mutations: {
