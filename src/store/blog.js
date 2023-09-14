@@ -59,9 +59,27 @@ export default {
             description: 'Best For Any Office & Business Interior  Solution',
             date: '25 December, 2022'
           },
+          {
+            link: '#',
+            imgUrl: './img/news1.png',
+            sticker: 'Test',
+            description: 'Let’s Get Solution For Building Construction Work',
+            date: '26 December, 2022'
+          },
+          {
+            link: '#',
+            imgUrl: './img/news1.png',
+            sticker: 'Test',
+            description: 'Let’s Get Solution For Building Construction Work',
+            date: '26 December, 2022'
+          },
         ],
-        pagination: true,
-      }
+        blocksPerPage: 6,
+        pagination: {
+          visible: true,
+          currentPage: 1,
+        }
+      },
     }
   },
   getters: {
@@ -73,6 +91,6 @@ export default {
     },
     getBlogNewsData(state) {
       return state.news;
-    }
+    },
   }
-}
+};
