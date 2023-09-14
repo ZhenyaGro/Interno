@@ -27,6 +27,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '/styles/_variables.scss';
+
 button {
   background-color: white;
 }
@@ -58,6 +60,18 @@ button {
 
   &__page-next svg circle {
     transition: all 2s;
+  }
+}
+
+@media (any-hover: hover) {
+  .news {
+    &__page-number:hover {
+      background-color: $brandColor;
+    }
+
+    &__page-next:hover svg circle {
+      fill: $brandColor;
+    }
   }
 }
 </style>

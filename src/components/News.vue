@@ -75,16 +75,4 @@ export default {
     gap: 27px;
   }
 }
-
-@media (any-hover: hover) {
-  .news {
-    &__page-number:hover {
-      background-color: $brandColor;
-    }
-
-    &__page-next:hover svg circle {
-      fill: $brandColor;
-    }
-  }
-}
 </style>
