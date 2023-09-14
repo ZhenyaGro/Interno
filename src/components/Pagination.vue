@@ -5,13 +5,12 @@
       :to="`/blog/${index + 1}`" @click="setCurrentPage(index + 1)">{{
         pageNumber
       }}</button>
-    <a v-if="pageCount > 2" href="#" class="news__page-next">
-      <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
-        <circle cx="26.5" cy="26" r="25.5" stroke="#CDA274" />
-        <path d="M23.5571 32L29.5 25.3143L23.5571 18.6286" stroke="#292F36" stroke-width="2" stroke-linecap="round"
-          stroke-linejoin="round" />
-      </svg>
-    </a>
+    <svg v-if="pageCount > 2" class="news__page-next" xmlns="http://www.w3.org/2000/svg" width="53" height="52"
+      viewBox="0 0 53 52" fill="none">
+      <circle cx="26.5" cy="26" r="25.5" stroke="#CDA274" />
+      <path d="M23.5571 32L29.5 25.3143L23.5571 18.6286" stroke="#292F36" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </svg>
   </div>
 </template>
 
@@ -34,7 +33,6 @@ button {
 }
 
 .news {
-
   &__page-number {
     height: 52px;
     width: 52px;
@@ -51,11 +49,23 @@ button {
     justify-content: center;
     border: 1px solid #CDA274;
     transition: background-color .2s;
+
+    &:hover {
+      background-color: $brandColor;
+    }
+
+    &:active {
+      background-color: #F4F0EC;
+    }
   }
 
   &__page-number_current {
     background-color: #F4F0EC;
     border: 0;
+
+    &:hover {
+      background-color: #F4F0EC;
+    }
   }
 
   &__page-next svg circle {
@@ -65,13 +75,17 @@ button {
 
 @media (any-hover: hover) {
   .news {
-    &__page-number:hover {
-      background-color: $brandColor;
-    }
+    // &__page-number:hover {
+    //   background-color: $brandColor;
+    // }
 
     &__page-next:hover svg circle {
       fill: $brandColor;
     }
   }
 }
+
+// .news__page-number:active {
+//   background-color: #F4F0EC;
+// }
 </style>
