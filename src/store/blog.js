@@ -62,14 +62,49 @@ export default {
           {
             link: '#',
             imgUrl: './img/news1.png',
-            sticker: 'Test',
+            sticker: 'Block 7',
             description: 'Let’s Get Solution For Building Construction Work',
             date: '26 December, 2022'
           },
           {
             link: '#',
             imgUrl: './img/news1.png',
-            sticker: 'Test',
+            sticker: 'Block 8',
+            description: 'Let’s Get Solution For Building Construction Work',
+            date: '26 December, 2022'
+          },
+          {
+            link: '#',
+            imgUrl: './img/news1.png',
+            sticker: 'Block 9',
+            description: 'Let’s Get Solution For Building Construction Work',
+            date: '26 December, 2022'
+          },
+          {
+            link: '#',
+            imgUrl: './img/news1.png',
+            sticker: 'Block 10',
+            description: 'Let’s Get Solution For Building Construction Work',
+            date: '26 December, 2022'
+          },
+          {
+            link: '#',
+            imgUrl: './img/news1.png',
+            sticker: 'Block 11',
+            description: 'Let’s Get Solution For Building Construction Work',
+            date: '26 December, 2022'
+          },
+          {
+            link: '#',
+            imgUrl: './img/news1.png',
+            sticker: 'Block 12',
+            description: 'Let’s Get Solution For Building Construction Work',
+            date: '26 December, 2022'
+          },
+          {
+            link: '#',
+            imgUrl: './img/news1.png',
+            sticker: 'Block 13',
             description: 'Let’s Get Solution For Building Construction Work',
             date: '26 December, 2022'
           },

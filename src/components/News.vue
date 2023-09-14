@@ -5,7 +5,7 @@
       <p v-if="data.text" class="news__text">{{ data.text }}</p>
     </header>
     <div class="news__blocks">
-      <NewsBlock v-for="(block, index) in showedBlocks" :key="index" :link="block.link" :imgUrl="block.imgUrl"
+      <NewsBlock v-for="(block, index) in displayedBlocks" :key="index" :link="block.link" :imgUrl="block.imgUrl"
         :sticker="block.sticker" :description="block.description" :date="block.date" />
     </div>
     <Pagination :visible="data.pagination.visible" :pageCount="totalPages" :currentPage="data.pagination.currentPage" />
@@ -28,16 +28,13 @@ export default {
       return this.data.text ? 'news__heading' :
         ['news__heading', 'news__heading_left']
     },
-    showedBlocks() {
-      return this.data.blocks.slice(this.data.pagination.currentPage - 1, this.data.blocksPerPage);
-    },
     totalPages() {
       return Math.ceil(this.data.blocks.length / this.data.blocksPerPage);
     },
-    displayedItems() {
+    displayedBlocks() {
       const startIndex = (this.data.pagination.currentPage - 1) * this.data.blocksPerPage;
       const endIndex = startIndex + this.data.blocksPerPage;
-      return this.items.slice(startIndex, endIndex);
+      return this.data.blocks.slice(startIndex, endIndex);
     },
   },
 }
