@@ -1,9 +1,10 @@
 <template>
   <div v-if="visible" class="news__pagination">
-    <a v-for="(pageNumber, index) in  pageCount " :key="index" href="#" class="news__page-number"
-      :class="index + 1 == this.currentPage ? ['news__page-number', 'news__page-number_current'] : 'news__page-number'">{{
+    <button v-for="(pageNumber, index) in  pageCount " :key="index" href="#" class="news__page-number"
+      :class="index + 1 == this.currentPage ? ['news__page-number', 'news__page-number_current'] : 'news__page-number'"
+      :to="`/blog/${index + 1}`" @click="setCurrentPage(index + 1)">{{
         pageNumber
-      }}</a>
+      }}</button>
     <a v-if="pageCount > 2" href="#" class="news__page-next">
       <svg xmlns="http://www.w3.org/2000/svg" width="53" height="52" viewBox="0 0 53 52" fill="none">
         <circle cx="26.5" cy="26" r="25.5" stroke="#CDA274" />
@@ -15,11 +16,48 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
+
 export default {
   props: ['visible', 'pageCount', 'currentPage'],
-  computed: {
+  methods: {
+    ...mapActions(['setCurrentPage'])
   }
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+button {
+  background-color: white;
+}
+
+.news {
+
+  &__page-number {
+    height: 52px;
+    width: 52px;
+    color: #292F36;
+    font-family: 'Jost';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; // 24px
+    text-transform: capitalize;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #CDA274;
+    transition: background-color .2s;
+  }
+
+  &__page-number_current {
+    background-color: #F4F0EC;
+    border: 0;
+  }
+
+  &__page-next svg circle {
+    transition: all 2s;
+  }
+}
+</style>

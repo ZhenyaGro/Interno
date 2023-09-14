@@ -127,5 +127,15 @@ export default {
     getBlogNewsData(state) {
       return state.news;
     },
+  },
+  mutations: {
+    SET_CURRENTPAGE(state, number) {
+      state.news.pagination.currentPage = number;
+    }
+  },
+  actions: {
+    setCurrentPage({ commit }, number) {
+      commit('SET_CURRENTPAGE', number);
+    }
   }
 };
