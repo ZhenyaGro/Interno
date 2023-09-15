@@ -1,8 +1,8 @@
 <template>
   <div v-if="visible" class="news__pagination">
-    <button v-for="(pageNumber, index) in  pageCount " :key="index" href="#" class="news__page-number"
-      :class="index + 1 == this.currentPage ? ['news__page-number', 'news__page-number_current'] : 'news__page-number'"
-      :to="`/blog/${index + 1}`" @click="setCurrentPage(index + 1)">{{
+    <button v-for="(pageNumber, index) in  visiblePages " :key="index" class="news__page-number"
+      :class="pageNumber == this.currentPage ? ['news__page-number', 'news__page-number_current'] : 'news__page-number'"
+      :to="`/blog/${pageNumber}`" @click="setCurrentPage(pageNumber)">{{
         pageNumber
       }}</button>
     <svg v-if="pageCount > 2" class="news__page-next" xmlns="http://www.w3.org/2000/svg" width="53" height="52"
@@ -18,7 +18,7 @@
 import { mapActions } from 'vuex';
 
 export default {
-  props: ['visible', 'pageCount', 'currentPage'],
+  props: ['visible', 'pageCount', 'currentPage', 'visiblePages'],
   methods: {
     ...mapActions(['setCurrentPage'])
   }
