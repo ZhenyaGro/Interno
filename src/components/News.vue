@@ -29,6 +29,9 @@ export default {
         ['news__heading', 'news__heading_left'];
     },
     totalPages() {
+      if (!this.data.paginationVisible)
+        return;
+
       return Math.ceil(this.data.blocks.length / this.data.blocksPerPage);
     },
     displayedBlocks() {
