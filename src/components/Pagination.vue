@@ -75,17 +75,17 @@ button {
 
 @media (any-hover: hover) {
   .news {
-    // &__page-number:hover {
-    //   background-color: $brandColor;
-    // }
-
     &__page-next:hover svg circle {
       fill: $brandColor;
     }
+
+    svg.news__page-next:hover {
+      fill: $brandColor;
+    }
+
+    svg.news__page-next:active {
+      fill: #F4F0EC;
+    }
   }
 }
-
-// .news__page-number:active {
-//   background-color: #F4F0EC;
-// }
 </style>
