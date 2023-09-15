@@ -26,12 +26,15 @@ export default {
   computed: {
     headingStyle() {
       return this.data.text ? 'news__heading' :
-        ['news__heading', 'news__heading_left']
+        ['news__heading', 'news__heading_left'];
     },
     totalPages() {
       return Math.ceil(this.data.blocks.length / this.data.blocksPerPage);
     },
     displayedBlocks() {
+      if (!this.data.paginationVisible)
+        return this.data.blocks;
+
       const startIndex = (this.data.currentPage - 1) * this.data.blocksPerPage;
       const endIndex = startIndex + this.data.blocksPerPage;
       return this.data.blocks.slice(startIndex, endIndex);

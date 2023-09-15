@@ -76,7 +76,8 @@ export default {
             description: 'Best For Any Office & Business Interior Solution',
             date: '25 December, 2022'
           }
-        ]
+        ],
+        paginationVisible: false
       }
     }
   },
