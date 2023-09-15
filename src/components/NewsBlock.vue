@@ -1,10 +1,12 @@
 <template>
   <a :href="link" class="news__block">
-    <div class="news__picture">
-      <img :src="imgUrl" alt="news image" class="news__img">
-      <p class="news__sticker">{{ sticker }}</p>
+    <div class="news__main-group">
+      <div class="news__picture">
+        <img :src="imgUrl" alt="news image" class="news__img">
+        <p class="news__sticker">{{ sticker }}</p>
+      </div>
+      <h3 class="news__description">{{ description }}</h3>
     </div>
-    <h3 class="news__description">{{ description }}</h3>
     <div class="news__additional">
       <p class="news__date">{{ date }}</p>
       <svg xmlns="http://www.w3.org/2000/svg" width="52" height="53" viewBox="0 0 52 53" fill="none">
@@ -28,18 +30,25 @@ export default {
 
 .news {
   &__block {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 382px;
     box-sizing: border-box;
     border: 1px solid #E7E7E7;
     border-radius: 62px;
-    padding: 21px;
+    padding: 21px 21px 30px;
     box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
     transition: background-color .3s;
 
     & svg circle {
       transition: fill .3s;
     }
+  }
+
+  &__main-group {
+    display: flex;
+    flex-direction: column;
   }
 
   &__picture {
@@ -70,7 +79,7 @@ export default {
     line-height: 125%; // 31.25px
     letter-spacing: 0.5px;
     margin-bottom: 30px;
-    max-width: 305px;
+    max-width: 295px;
   }
 
   &__additional {
