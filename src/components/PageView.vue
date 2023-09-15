@@ -4,7 +4,7 @@
       <h1 class="page-view__heading">{{ data.heading }}</h1>
       <ul class="page-view__breadcrumbs">
         <li v-for="(breadcrumb, index) in data.breadcrumbs" :key="index" class="page-view__breadcrumb">
-          <a href="index.html" class="page-view__link">{{ breadcrumb }}</a>
+          <router-link class="page-view__breadcrumb" :to="`/${breadcrumb.toLowerCase()}`">{{ breadcrumb }}</router-link>
         </li>
       </ul>
     </div>
