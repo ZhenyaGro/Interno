@@ -108,6 +108,27 @@ export default {
             description: 'Let’s Get Solution For Building Construction Work',
             date: '26 December, 2022'
           },
+          {
+            link: '#',
+            imgUrl: './img/news1.png',
+            sticker: 'Block 14',
+            description: 'Let’s Get Solution For Building Construction Work',
+            date: '26 December, 2022'
+          },
+          {
+            link: '#',
+            imgUrl: './img/news1.png',
+            sticker: 'Block 15',
+            description: 'Let’s Get Solution For Building Construction Work',
+            date: '26 December, 2022'
+          },
+          {
+            link: '#',
+            imgUrl: './img/news1.png',
+            sticker: 'Block 16',
+            description: 'Let’s Get Solution For Building Construction Work',
+            date: '26 December, 2022'
+          },
         ],
         blocksPerPage: 6,
         paginationVisible: true,
