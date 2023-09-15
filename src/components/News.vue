@@ -8,7 +8,7 @@
       <NewsBlock v-for="(block, index) in displayedBlocks" :key="index" :link="block.link" :imgUrl="block.imgUrl"
         :sticker="block.sticker" :description="block.description" :date="block.date" />
     </div>
-    <Pagination :visible="data.pagination.visible" :pageCount="totalPages" :currentPage="data.pagination.currentPage" />
+    <Pagination :visible="data.paginationVisible" :pageCount="totalPages" :currentPage="data.currentPage" />
   </section>
 </template>
 
@@ -32,7 +32,7 @@ export default {
       return Math.ceil(this.data.blocks.length / this.data.blocksPerPage);
     },
     displayedBlocks() {
-      const startIndex = (this.data.pagination.currentPage - 1) * this.data.blocksPerPage;
+      const startIndex = (this.data.currentPage - 1) * this.data.blocksPerPage;
       const endIndex = startIndex + this.data.blocksPerPage;
       return this.data.blocks.slice(startIndex, endIndex);
     },

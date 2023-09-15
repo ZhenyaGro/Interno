@@ -110,10 +110,8 @@ export default {
           },
         ],
         blocksPerPage: 6,
-        pagination: {
-          visible: true,
-          currentPage: 1,
-        }
+        paginationVisible: true,
+        currentPage: 1
       },
     }
   },
@@ -130,7 +128,7 @@ export default {
   },
   mutations: {
     SET_CURRENTPAGE(state, number) {
-      state.news.pagination.currentPage = number;
+      state.news.currentPage = number;
     }
   },
   actions: {
