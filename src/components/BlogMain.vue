@@ -1,7 +1,7 @@
 <template>
   <div class="content container">
     <div>
-      <BlogDetails />
+      <BlogDetailsComp />
       <BlogList :filterProp="selectedTag" />
     </div>
     <TagList @selectTag="getSelectedTag" />
@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import BlogDetails from './BlogDetails.vue';
+import BlogDetailsComp from './BlogDetailsComp.vue';
 import BlogList from './BlogList.vue';
 import TagList from './TagList.vue';
 
@@ -21,7 +21,7 @@ export default {
     }
   },
   components: {
-    BlogDetails,
+    BlogDetailsComp,
     BlogList,
     TagList
   },
@@ -32,3 +32,11 @@ export default {
   },
 }
 </script>
+
+<style lang="scss">
+.content {
+  display: flex;
+  gap: 52px;
+  margin-bottom: 60px;
+}
+</style>
