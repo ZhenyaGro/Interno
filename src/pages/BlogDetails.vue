@@ -1,22 +1,31 @@
 <template>
   <div>
-    <Header></Header>
+    <PageView class="page-view_blog-details" />
     <BlogMain></BlogMain>
-    <Footer></Footer>
   </div>
 </template>
 
 <script>
-import Header from '@/components/Header.vue';
+import PageView from '@/components/PageView.vue';
 import BlogMain from '@/components/BlogMain.vue';
-import Footer from '@/components/Footer.vue';
+import { mapGetters } from 'vuex';
 
 export default {
   name: 'App',
   components: {
-    Header,
+    PageView,
     BlogMain,
-    Footer
+  },
+  computed: {
+    ...mapGetters([''])
   }
 }
 </script>
+
+<style lang="scss" scoped>
+@import '/styles/_variables.scss';
+
+.page-view {
+  @include page-view_background('/public/img/blog-details-background.jpg', 356);
+}
+</style>
