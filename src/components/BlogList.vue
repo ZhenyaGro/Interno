@@ -1,14 +1,16 @@
 <template>
   <div>
-    <ol class="blog__ol">
-      <li v-for="(article, index) in filteredArticles" :key="index" class="blog__li">
+    <!-- <ol class="blog__ol"> -->
+    <!-- <li v-for="(article, index) in filteredArticles" :key="index" class="blog__li">
         <BlogItem :text="article.text" />
       </li>
-    </ol>
+    </ol> -->
+    <BlogItem />
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 import BlogItem from './BlogItem.vue';
 
 export default {
@@ -36,6 +38,7 @@ export default {
     };
   },
   computed: {
+    ...mapGetters(['getArticlesData']),
     filteredArticles() {
       return !this.filterProp ? this.articles
         : this.articles.filter(article => article.tags.includes(this.filterProp));
