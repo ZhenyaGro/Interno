@@ -18,154 +18,154 @@ export default {
         heading: 'Articles & News',
         blocks: [
           {
-            link: '#',
+            link: '/blogdetails',
             imgUrl: './img/news1.png',
             sticker: 'Kitchen Design',
             description: 'Let’s Get Solution For Building Construction Work',
             date: '26 December, 2022'
           },
           {
-            link: '#',
+            link: '/blogdetails',
             imgUrl: './img/news2.png',
             sticker: 'Living Design',
             description: 'Low Cost Latest Invented Interior Designing Ideas.',
             date: '22 December, 2022'
           },
           {
-            link: '#',
+            link: '/blogdetails',
             imgUrl: './img/news3.png',
             sticker: 'Interior Design',
             description: 'Best For Any Office & Business Interior Solution',
             date: '25 December, 2022'
           },
           {
-            link: '#',
+            link: '/blogdetails',
             imgUrl: './img/news4.png',
             sticker: 'Kitchen Design',
             description: 'Let’s Get Solution For Building Construction Work',
             date: '26 December, 2022'
           },
           {
-            link: '#',
+            link: '/blogdetails',
             imgUrl: './img/news5.png',
             sticker: 'Living Design',
             description: 'Low Cost Latest Invented Interior Designing Ideas.',
             date: '22 December, 2022'
           },
           {
-            link: '#',
+            link: '/blogdetails',
             imgUrl: './img/news6.png',
             sticker: 'Interior Design',
             description: 'Best For Any Office & Business Interior  Solution',
             date: '25 December, 2022'
           },
           {
-            link: '#',
+            link: '/blogdetails',
             imgUrl: './img/news1.png',
             sticker: 'Block 7',
             description: 'Let’s Get Solution For Building Construction Work',
             date: '26 December, 2022'
           },
           {
-            link: '#',
+            link: '/blogdetails',
             imgUrl: './img/news1.png',
             sticker: 'Block 8',
             description: 'Let’s Get Solution For Building Construction Work',
             date: '26 December, 2022'
           },
           {
-            link: '#',
+            link: '/blogdetails',
             imgUrl: './img/news1.png',
             sticker: 'Block 9',
             description: 'Let’s Get Solution For Building Construction Work',
             date: '26 December, 2022'
           },
           {
-            link: '#',
+            link: '/blogdetails',
             imgUrl: './img/news1.png',
             sticker: 'Block 10',
             description: 'Let’s Get Solution For Building Construction Work',
             date: '26 December, 2022'
           },
           {
-            link: '#',
+            link: '/blogdetails',
             imgUrl: './img/news1.png',
             sticker: 'Block 11',
             description: 'Let’s Get Solution For Building Construction Work',
             date: '26 December, 2022'
           },
           {
-            link: '#',
+            link: '/blogdetails',
             imgUrl: './img/news1.png',
             sticker: 'Block 12',
             description: 'Let’s Get Solution For Building Construction Work',
             date: '26 December, 2022'
           },
           {
-            link: '#',
+            link: '/blogdetails',
             imgUrl: './img/news1.png',
             sticker: 'Block 13',
             description: 'Let’s Get Solution For Building Construction Work',
             date: '26 December, 2022'
           },
           {
-            link: '#',
+            link: '/blogdetails',
             imgUrl: './img/news1.png',
             sticker: 'Block 14',
             description: 'Let’s Get Solution For Building Construction Work',
             date: '26 December, 2022'
           },
           {
-            link: '#',
+            link: '/blogdetails',
             imgUrl: './img/news1.png',
             sticker: 'Block 15',
             description: 'Let’s Get Solution For Building Construction Work',
             date: '26 December, 2022'
           },
           {
-            link: '#',
+            link: '/blogdetails',
             imgUrl: './img/news1.png',
             sticker: 'Block 16',
             description: 'Let’s Get Solution For Building Construction Work',
             date: '26 December, 2022'
           },
           {
-            link: '#',
+            link: '/blogdetails',
             imgUrl: './img/news1.png',
             sticker: 'Block 17',
             description: 'Let’s Get Solution For Building Construction Work',
             date: '26 December, 2022'
           },
           {
-            link: '#',
+            link: '/blogdetails',
             imgUrl: './img/news1.png',
             sticker: 'Block 18',
             description: 'Let’s Get Solution For Building Construction Work',
             date: '26 December, 2022'
           },
           {
-            link: '#',
+            link: '/blogdetails',
             imgUrl: './img/news1.png',
             sticker: 'Block 19',
             description: 'Let’s Get Solution For Building Construction Work',
             date: '26 December, 2022'
           },
           {
-            link: '#',
+            link: '/blogdetails',
             imgUrl: './img/news1.png',
             sticker: 'Block 20',
             description: 'Let’s Get Solution For Building Construction Work',
             date: '26 December, 2022'
           },
           {
-            link: '#',
+            link: '/blogdetails',
             imgUrl: './img/news1.png',
             sticker: 'Block 21',
             description: 'Let’s Get Solution For Building Construction Work',
             date: '26 December, 2022'
           },
           {
-            link: '#',
+            link: '/blogdetails',
             imgUrl: './img/news1.png',
             sticker: 'Block 22',
             description: 'Let’s Get Solution For Building Construction Work',

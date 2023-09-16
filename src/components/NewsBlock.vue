@@ -1,5 +1,5 @@
 <template>
-  <a :href="link" class="news__block">
+  <router-link :to="link" class="news__block">
     <div class="news__main-group">
       <div class="news__picture">
         <img :src="imgUrl" alt="news image" class="news__img">
@@ -15,7 +15,7 @@
           stroke-linejoin="round" />
       </svg>
     </div>
-  </a>
+  </router-link>
 </template>
 
 <script>
