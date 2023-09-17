@@ -1,6 +1,6 @@
 <template>
   <div>
-    <BlogItem v-for="(article, index) in getArticlesData" :key="index" :article="article" />
+    <BlogItem v-for="(article, index) in filteredArticles" :key="index" :article="article" />
   </div>
 </template>
 
@@ -17,8 +17,9 @@ export default {
   computed: {
     ...mapGetters(['getArticlesData']),
     filteredArticles() {
-      return !this.filterProp ? this.articles
-        : this.articles.filter(article => article.tags.includes(this.filterProp));
+      return !this.filterProp ?
+        this.getArticlesData :
+        this.getArticlesData.filter(article => article.tags.includes(this.filterProp));
     },
   }
 }

@@ -11,24 +11,40 @@ export default {
           text: ["Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don't look even slightly believable.", 'Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.'],
           hasQuote: true,
           quote: 'The details are not the details. They make the design.',
-          tags: ['Kitchen, Building']
+          tags: ['Kitchen', 'Building']
         },
         {
           heading: 'Design sprints are great',
           textAfterHeading: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
           listText: ['Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.', 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.', 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'],
           imgPath: '/img/article-list_image.png',
-          text: ['Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.']
+          text: ['Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.'],
+          tags: ['Bedroom2']
         }
       ],
-      tags: []
+      tags: ['Kitchen', 'Bedroom', 'Building', 'Architecture', 'Kitchen Planning', 'Bedroom2'],
+      selectedTag: ''
     }
   },
   getters: {
     getArticlesData(state) {
       return state.articles;
     },
-    getFilteredArticles(state) {
+    getTags(state) {
+      return state.tags;
+    },
+    getSelectedTag(state) {
+      return state.selectedTag;
+    }
+  },
+  mutations: {
+    SET_SELECTEDTAG(state, tag) {
+      state.selectedTag = tag;
+    }
+  },
+  actions: {
+    selectTag({ commit }, tag) {
+      commit('SET_SELECTEDTAG', tag);
     }
   }
 };

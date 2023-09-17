@@ -1,32 +1,25 @@
 <template>
   <div class="content container">
     <div>
-      <BlogList :filterProp="selectedTag" />
+      <BlogList :filterProp="getSelectedTag" />
     </div>
-    <TagList @selectTag="getSelectedTag" />
+    <TagList :tags="getTags" @selectTag="getSelectedTag" />
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 import BlogList from './BlogList.vue';
 import TagList from './TagList.vue';
 
-
 export default {
-  data() {
-    return {
-      selectedTag: ''
-    }
-  },
   components: {
     BlogList,
     TagList
   },
-  methods: {
-    getSelectedTag(tag) {
-      this.selectedTag = tag;
-    }
-  },
+  computed: {
+    ...mapGetters(['getTags', 'getSelectedTag'])
+  }
 }
 </script>
 

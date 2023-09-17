@@ -1,27 +1,22 @@
 <template>
   <div class="tags__container">
-    <div v-for="(tag, index) in tags" :key="index" class="tags__tag" @click="handleClick(tag)"
-      :class="{ 'tags__tag_clicked': tag === selectedTag }">{{ tag }}</div>
+    <div v-for="(tag, index) in tags" :key="index" class="tags__tag" @click="selectTag(tag)"
+      :class="{ 'tags__tag_clicked': tag === getSelectedTag }">{{ tag }}</div>
   </div>
 </template>
 
 <script>
+import { mapGetters, mapActions } from 'vuex';
+
 export default {
+  props: ['tags'],
   name: 'BlogList',
-  data() {
-    return {
-      tags: ['Kitchen', 'Bedroom', 'Building', 'Architecture', 'Kitchen Planning', 'Bedroom2'],
-      selectedTag: '',
-    };
+  computed: {
+    ...mapGetters(['getSelectedTag'])
   },
 
   methods: {
-    handleClick(tag) {
-      // dataExchange.$emit('selected-tag', tag); // Worked till cli
-
-      this.selectedTag = this.selectedTag === tag ? '' : tag;
-      this.$emit('selectTag', this.selectedTag);
-    }
+    ...mapActions(['selectTag']),
   },
 }
 </script>
