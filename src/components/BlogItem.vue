@@ -12,7 +12,7 @@
       <span class="blog__breadcrumbs">
         <ul class="blog__breadcrumbs">
           <li v-for="(breadcrumb, index) in article.breadcrumbs" :key="index" class="blog__breadcrumb">
-            <a href="index.html" class="blog__link">{{ breadcrumb }}</a>
+            <router-link :to="`${article.links}`" href="index.html" class="blog__link">{{ breadcrumb }}</router-link>
           </li>
         </ul>
       </span>
