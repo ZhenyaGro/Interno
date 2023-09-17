@@ -3,7 +3,7 @@
     <div>
       <BlogList :filterProp="getSelectedTag" />
     </div>
-    <TagList :tags="getTags" @selectTag="getSelectedTag" />
+    <TagList class="tags" :tags="getTags" @selectTag="getSelectedTag" />
   </div>
 </template>
 
@@ -23,10 +23,14 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .content {
   display: flex;
   gap: 52px;
   margin-bottom: 60px;
+}
+
+.tags {
+  min-width: 350px;
 }
 </style>
