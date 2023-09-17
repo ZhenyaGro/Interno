@@ -1,5 +1,5 @@
 <template>
-  <article v-for="(article, index) in getArticlesData" :key="index" class="blog__article">
+  <article class="blog__article">
     <h1 class="blog__heading">{{ article.heading }}</h1>
     <p v-if="article.textAfterHeading" class="blog__text">{{ article.textAfterHeading }}</p>
     <ol v-if="article.listText" class="blog__ol">
@@ -34,8 +34,9 @@
 import { mapGetters } from 'vuex';
 
 export default {
+  props: ['article'],
   computed: {
-    ...mapGetters(['getArticlesData'])
+    // ...mapGetters(['getArticlesData'])
   }
 }
 </script>

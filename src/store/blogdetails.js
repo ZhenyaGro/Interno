@@ -20,12 +20,15 @@ export default {
           imgPath: '/img/article-list_image.png',
           text: ['Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.']
         }
-      ]
+      ],
+      tags: []
     }
   },
   getters: {
     getArticlesData(state) {
       return state.articles;
+    },
+    getFilteredArticles(state) {
     }
   }
 };
