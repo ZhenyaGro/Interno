@@ -1,7 +1,6 @@
 <template>
   <div>
     <PageView class="page-view" />
-    <p>test</p>
   </div>
 </template>
 
