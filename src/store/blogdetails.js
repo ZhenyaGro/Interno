@@ -39,7 +39,7 @@ export default {
   },
   mutations: {
     SET_SELECTEDTAG(state, tag) {
-      state.selectedTag = tag;
+      state.selectedTag = state.selectedTag == tag ? '' : tag;
     }
   },
   actions: {
