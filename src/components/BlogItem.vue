@@ -31,13 +31,8 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
-
 export default {
-  props: ['article'],
-  computed: {
-    // ...mapGetters(['getArticlesData'])
-  }
+  props: ['article']
 }
 </script>
 
@@ -46,7 +41,7 @@ export default {
 
 .blog {
 
-  &__blog-details {
+  &__article {
     margin-bottom: 27px;
   }
 
