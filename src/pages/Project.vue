@@ -1,16 +1,20 @@
 <template>
   <div>
-    <PageView class="page-view" />
+    <PageView class="page-view" :data="getProjectPageViewData" />
   </div>
 </template>
 
 <script>
 import PageView from '@/components/PageView.vue';
+import { mapGetters } from 'vuex';
 
 export default {
   name: 'Project',
   components: {
     PageView
+  },
+  computed: {
+    ...mapGetters(['getProjectPageViewData'])
   }
 }
 </script>
