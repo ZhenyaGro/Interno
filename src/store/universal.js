@@ -25,7 +25,7 @@ export default {
           link: '/home',
           text: 'Home'
         }, {
-          link: '/',
+          link: '/project',
           text: 'Project'
         },
         {
