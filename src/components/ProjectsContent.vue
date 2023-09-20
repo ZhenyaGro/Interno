@@ -1,6 +1,6 @@
 <template>
-  <div class="projects container">
-    <ProjectsBlock v-for="(block, index) in getProjectData.bedroom" :key="index" :data="block" class="projects__card" />
+  <div class="project container">
+    <ProjectsBlock v-for="(block, index) in getProjectData.bedroom" :key="index" :data="block" class="project__card" />
   </div>
 </template>
 
@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.projects {
+.project {
   columns: 2;
   gap: 24px;
 
