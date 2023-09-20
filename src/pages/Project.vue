@@ -2,14 +2,14 @@
   <div>
     <PageView class="page-view" :data="getProjectPageViewData" />
     <TabPanel :tabs="getTabsData" :selectedTab="getIndexSelectedTab" class="categories" />
-    <Projects />
+    <ProjectsContent />
   </div>
 </template>
 
 <script>
 import PageView from '@/components/PageView.vue';
 import TabPanel from '@/components/TabPanel.vue';
-import Projects from '@/components/Projects.vue';
+import ProjectsContent from '@/components/ProjectsContent.vue';
 import { mapGetters } from 'vuex';
 
 export default {
@@ -17,7 +17,7 @@ export default {
   components: {
     PageView,
     TabPanel,
-    Projects
+    ProjectsContent
   },
   computed: {
     ...mapGetters(['getProjectPageViewData', 'getTabsData', 'getIndexSelectedTab'])
