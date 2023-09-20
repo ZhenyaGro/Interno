@@ -5,8 +5,7 @@
       <p class="projects__text">{{ getProjectsData.paragraph }}</p>
     </header>
     <div class="projects__content">
-      <ProjectsBlock v-for="(block, index) in getProjectsData.blocks" :key="index" :imgUrl="block.imgPath"
-        :heading="block.heading" :paragraph="block.text"></ProjectsBlock>
+      <ProjectsBlock v-for="(block, index) in getProjectsData.blocks" :key="index" :data="block"></ProjectsBlock>
     </div>
   </section>
 </template>
