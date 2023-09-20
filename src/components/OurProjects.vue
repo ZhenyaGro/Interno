@@ -5,7 +5,7 @@
       <p class="projects__text">{{ getProjectsData.paragraph }}</p>
     </header>
     <div class="projects__content">
-      <ProjectsBlock class="projects__block" v-for="(block, index) in getProjectsData.blocks" :key="index" :data="block">
+      <ProjectsBlock class="home-projects" v-for="(block, index) in getProjectsData.blocks" :key="index" :data="block">
       </ProjectsBlock>
     </div>
   </section>
@@ -31,5 +31,21 @@ export default {
 </script>
 
 <style lang="scss">
-// .projects {}
+.home-projects {
+  &:first-child>img {
+    border-radius: 0 80px 0 0;
+  }
+
+  &:nth-child(2)>img {
+    border-radius: 80px 0 0 0;
+  }
+
+  &:nth-child(3)>img {
+    border-radius: 0 0 80px 0;
+  }
+
+  &:last-child>img {
+    border-radius: 0 0 0 80px;
+  }
+}
 </style>

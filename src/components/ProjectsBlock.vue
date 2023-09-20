@@ -58,22 +58,6 @@ export default {
     display: block;
   }
 
-  &__block:first-child>img {
-    border-radius: 0 80px 0 0;
-  }
-
-  &__block:nth-child(2)>img {
-    border-radius: 80px 0 0 0;
-  }
-
-  &__block:nth-child(3)>img {
-    border-radius: 0 0 80px 0;
-  }
-
-  &__block:last-child>img {
-    border-radius: 0 0 0 80px;
-  }
-
   &__block svg {
 
     path,
